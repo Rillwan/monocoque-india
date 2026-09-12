@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monocoque Pvt Ltd | Precision Engineering Across Land, Sea and Sky</title>
+<meta name="description" content="Monocoque Pvt Ltd delivers precision engineering across Marine, Aerospace, Defence, Automobile and Oil & Gas sectors from Kochi, Kerala. 100+ years combined experience, 90m dry dock capacity.">
+<meta name="keywords" content="Monocoque, precision engineering Kochi, marine engineering Kerala, dry dock India, aerospace engineering, defence engineering, oil and gas engineering">
+<meta name="author" content="Monocoque Pvt Ltd">
+<link rel="canonical" href="https://monocoqueindia.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Monocoque Pvt Ltd | Precision Engineering Across Land, Sea and Sky">
+<meta property="og:description" content="Trusted engineering partner with decades of expertise across Marine, Oil & Gas, Automobile, Aerospace and Defence sectors.">
+<meta property="og:url" content="https://monocoqueindia.com/">
+<meta property="og:image" content="https://monocoqueindia.com/assets/og-image.jpg">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Monocoque Pvt Ltd | Precision Engineering Across Land, Sea and Sky">
+<meta name="twitter:description" content="Delivering precision engineering across Marine, Oil & Gas, Automobile, Aerospace and Defence sectors.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS (CDN, v4 engine) -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- SplitType for text-splitting animation -->
+<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EngineeringCompany",
+  "name": "Monocoque Pvt Ltd",
+  "alternateName": "Monocoque India",
+  "url": "https://monocoqueindia.com/",
+  "logo": "https://monocoqueindia.com/assets/logo.png",
+  "image": "https://monocoqueindia.com/assets/og-image.jpg",
+  "description": "Precision engineering company delivering vessel construction, repair, maintenance and offshore support across Marine, Oil & Gas, Automobile, Aerospace and Defence sectors.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom",
+    "addressLocality": "Kochi",
+    "addressRegion": "Kerala",
+    "postalCode": "682025",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-90725-09773",
+  "email": "sales@monocoqueindia.com",
+  "openingHours": "Mo-Su 10:00-19:00",
+  "sameAs": [
+    "https://www.facebook.com/monocoqueindia",
+    "https://www.instagram.com/monocoqueindia",
+    "https://twitter.com/monocoqueindia"
+  ]
+}
+</script>
+</head>
+<body class="bg-[var(--bg)] text-[var(--text)] antialiased overflow-x-hidden">
+
+<!-- Preloader -->
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-mark">
+    <img src="./favicon.svg" alt="" class="preloader-logo">
+    <svg viewBox="0 0 100 100" width="64" height="64">
+      <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+      <circle id="preloader-ring" cx="50" cy="50" r="42" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="264"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+  <nav class="max-w-[1400px] mx-auto flex items-center justify-between px-6 md:px-10 py-5">
+    <a href="#home" class="flex items-center gap-3 shrink-0" aria-label="Monocoque home">
+      <img src="assets/logo.png" alt="Monocoque Pvt Ltd" class="h-9 md:h-11 w-auto">
+    </a>
+
+    <ul class="hidden lg:flex items-center gap-9 text-[13.5px] text-[var(--text-dim)] tracking-wide">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="sectors.html" class="nav-link">Industries</a></li>
+      <li><a href="career.html" class="nav-link">Careers</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+
+    <a href="contact.html" class="hidden md:inline-flex items-center gap-2 border border-[var(--accent)]/50 hover:border-[var(--accent)] hover:bg-[var(--accent)]/10 transition-colors duration-300 text-[13px] tracking-wide px-5 py-2.5 rounded-full">
+      Get in Touch
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <button id="menuToggle" class="lg:hidden flex flex-col gap-[5px] w-8 h-8 items-center justify-center" aria-label="Toggle menu" aria-expanded="false">
+      <span class="menu-bar w-6 h-[1.5px] bg-[var(--text)] transition-all duration-300"></span>
+      <span class="menu-bar w-6 h-[1.5px] bg-[var(--text)] transition-all duration-300"></span>
+    </button>
+  </nav>
+
+  <div id="mobileMenu" class="lg:hidden max-h-0 overflow-hidden transition-all duration-500 border-t border-white/0">
+    <ul class="flex flex-col gap-1 px-6 py-6 text-sm">
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="services.html" class="mobile-link">Services</a></li>
+      <li><a href="sectors.html" class="mobile-link">Industries</a></li>
+      <li><a href="career.html" class="mobile-link">Careers</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero relative min-h-[100svh] flex items-end">
+  <div class="hero-bg home-hero-bg absolute inset-0"></div>
+  <div class="absolute inset-0 hero-scanlines"></div>
+
+  <div class="relative z-10 w-full max-w-[1400px] mx-auto px-6 md:px-10 pb-20 md:pb-28">
+    <p class="eyebrow mb-5 reveal-up">Monocoque Pvt Ltd</p>
+    <h1 class="hero-title split-lines max-w-4xl">Delivering Precision Engineering Across <span class="text-accent">Land, Sea and Sky.</span></h1>
+    <p class="hero-sub max-w-lg mt-6 text-[var(--text-dim)] reveal-up">A trusted engineering partner with decades of expertise across Marine, Oil &amp; Gas, Automobile, Aerospace, Defence and other industrial sectors.</p>
+
+    <div class="flex items-center gap-6 mt-9 reveal-up">
+      <a href="services.html" class="btn-outline">
+        <span class="btn-ring"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Explore Our Services
+      </a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue absolute right-8 bottom-10 hidden md:flex flex-col items-center gap-3 text-[11px] tracking-[0.2em] text-[var(--text-dim)]">
+    <span class="[writing-mode:vertical-rl]">SCROLL</span>
+    <span class="scroll-line"></span>
+  </a>
+
+  <span class="coords absolute left-8 bottom-10 hidden md:block text-[11px] text-[var(--text-dim)] tracking-wide">9.9312° N&nbsp;&nbsp;76.2673° E — KOCHI, INDIA</span>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section-pad border-t border-white/5">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <p class="eyebrow mb-4">01 — About Us</p>
+        <h2 class="section-title split-lines">Engineering Excellence for a <span class="text-accent">Stronger Tomorrow.</span></h2>
+        <p class="mt-6 text-[var(--text-dim)] leading-relaxed max-w-lg reveal-up">Monocoque Pvt Ltd is a leading engineering company with decades of expertise across Marine, Oil &amp; Gas, Automobile, Aerospace, Defence and other industrial sectors. We deliver world-class solutions in vessel construction, repair, maintenance and offshore support.</p>
+        <a href="services.html" class="btn-outline mt-8 reveal-up">
+          Learn More
+          <span class="btn-ring"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <div class="grid grid-cols-3 gap-6 mt-14 pt-10 border-t border-white/5">
+          <div class="stat-block"><span class="stat-num" data-count="100" data-suffix="+">0</span><span class="stat-label">Years Combined Experience</span></div>
+          <div class="stat-block"><span class="stat-num-static">Quality, Safety &amp; Precision</span><span class="stat-label">Core Engineering Values</span></div>
+          <div class="stat-block"><span class="stat-num" data-count="90" data-suffix="m">0</span><span class="stat-label">Advanced Dry Dock Capacity</span></div>
+        </div>
+      </div>
+
+      <div class="relative h-[420px] lg:h-[520px] about-panels reveal-up">
+        <div class="panel panel-marine">
+          <div class="panel-inner"></div>
+          <div class="panel-content"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17h18M5 17V9l3-3h8l3 3v8M9 6h6M7 21l1-4M17 21l-1-4" stroke="var(--accent)" stroke-width="1.3"/></svg><span>Marine</span></div>
+        </div>
+        <div class="panel panel-sky">
+          <div class="panel-inner"></div>
+          <div class="panel-content"><svg viewBox="0 0 24 24" fill="none"><path d="M2 12l7-2 3-8 3 8 7 2-7 2-3 8-3-8z" stroke="var(--accent)" stroke-width="1.3"/></svg><span>Sky</span></div>
+        </div>
+        <div class="panel panel-precision">
+          <div class="panel-inner"></div>
+          <div class="panel-content"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="var(--accent)" stroke-width="1.3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="var(--accent)" stroke-width="1.3"/></svg><span>Precision</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client marquee -->
+    <div class="mt-24 pt-10 border-t border-white/5">
+      <p class="eyebrow mb-8">Our Valued Clients &amp; Partners</p>
+      <div class="marquee">
+        <div class="marquee-track" id="marqueeTrack">
+          <span>Air India SATS</span><span>KEL</span><span>Onyx GST</span><span>Roots</span><span>Qatar Energy</span><span>TRIMYT</span><span>BCCES</span>
+          <span aria-hidden="true">Air India SATS</span><span aria-hidden="true">KEL</span><span aria-hidden="true">Onyx GST</span><span aria-hidden="true">Roots</span><span aria-hidden="true">Qatar Energy</span><span aria-hidden="true">TRIMYT</span><span aria-hidden="true">BCCES</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="section-pad bg-[var(--bg-alt)] border-t border-white/5">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <div>
+        <p class="eyebrow mb-4">02 — Our Services &amp; Capabilities</p>
+        <h2 class="section-title split-lines">Turning Ideas into <span class="text-accent">Precision Solutions.</span></h2>
+      </div>
+      <a href="services.html" class="link-arrow reveal-up">Explore All Services</a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+      <article class="card card-manufacturing reveal-up">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20l6-6M14 4l6 6-9 9-4-1-1-4z" stroke="var(--accent)" stroke-width="1.4"/></svg></div>
+        <h3>Advanced Manufacturing &amp; Machining</h3>
+        <p>High-precision production using cutting-edge machinery for complex engineering needs.</p>
+      </article>
+      <article class="card card-prototyping reveal-up">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z M8 4v16M4 9h16" stroke="var(--accent)" stroke-width="1.4"/></svg></div>
+        <h3>Precision Engineering &amp; Prototyping</h3>
+        <p>Custom-engineered solutions from concept to prototype with unmatched accuracy.</p>
+      </article>
+      <article class="card card-cnc reveal-up">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="var(--accent)" stroke-width="1.4"/><path d="M12 8v4l3 2" stroke="var(--accent)" stroke-width="1.4"/></svg></div>
+        <h3>CNC, CAD/CAM &amp; Assembly Services</h3>
+        <p>End-to-end digital manufacturing with expert CNC machining and seamless assembly.</p>
+      </article>
+      <article class="card card-quality reveal-up">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7z" stroke="var(--accent)" stroke-width="1.4"/></svg></div>
+        <h3>Quality Control &amp; Testing</h3>
+        <p>Rigorous inspection and testing to ensure superior performance and industry compliance.</p>
+      </article>
+      <article class="card card-construction reveal-up">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21V9l9-6 9 6v12M9 21v-6h6v6" stroke="var(--accent)" stroke-width="1.4"/></svg></div>
+        <h3>Construction &amp; Interior Solutions</h3>
+        <p>End-to-end structural construction and interior design services.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INDUSTRIES ===== -->
+<section id="industries" class="section-pad border-t border-white/5">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <div>
+        <p class="eyebrow mb-4">03 — Industries We Serve</p>
+        <h2 class="section-title split-lines">Powering Progress Across <span class="text-accent">Key Industries.</span></h2>
+      </div>
+      <a href="sectors.html" class="link-arrow reveal-up">View All Industries</a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+      <article class="ind-card ind-card-marine reveal-up">
+        <span class="ind-num">01</span>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 17h18M5 17V9l3-3h8l3 3v8" stroke="var(--accent)" stroke-width="1.3"/></svg>
+        <h3>Marine Engineering &amp; Offshore Solutions</h3>
+      </article>
+      <article class="ind-card ind-card-automobile reveal-up">
+        <span class="ind-num">02</span>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 13l2-5h6l3 5M3 13h16M6 17h1M17 17h1" stroke="var(--accent)" stroke-width="1.3"/></svg>
+        <h3>Automobile Component Manufacturing</h3>
+      </article>
+      <article class="ind-card ind-card-aerospace reveal-up">
+        <span class="ind-num">03</span>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M2 16l20-6-3 8-6-2-3 4-2-5z" stroke="var(--accent)" stroke-width="1.3"/></svg>
+        <h3>Aerospace &amp; Aircraft Engineering</h3>
+      </article>
+      <article class="ind-card ind-card-defence reveal-up">
+        <span class="ind-num">04</span>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z" stroke="var(--accent)" stroke-width="1.3"/></svg>
+        <h3>Defence</h3>
+      </article>
+      <article class="ind-card ind-card-oilgas reveal-up">
+        <span class="ind-num">05</span>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M9 21V9l3-6 3 6v12M6 21h12" stroke="var(--accent)" stroke-width="1.3"/></svg>
+        <h3>Oil &amp; Gas</h3>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY MONOCOQUE ===== -->
+<section class="section-pad bg-[var(--bg-alt)] border-t border-white/5">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div>
+      <p class="eyebrow mb-4">Why Monocoque</p>
+      <h2 class="section-title split-lines">Built on Experience. <span class="text-accent">Driven by Innovation.</span></h2>
+      <p class="mt-6 text-[var(--text-dim)] leading-relaxed max-w-lg reveal-up">We combine decades of domain expertise with modern technology to deliver engineering solutions that meet global standards and real-world challenges.</p>
+
+      <div class="grid grid-cols-2 gap-8 mt-12">
+        <div class="stat-block"><span class="stat-num" data-count="100" data-suffix="+">0</span><span class="stat-label">Years Combined Experience</span></div>
+        <div class="stat-block"><span class="stat-num" data-count="90" data-suffix="m">0</span><span class="stat-label">Dry Dock Capacity</span></div>
+        <div class="stat-block"><span class="stat-num" data-count="5" data-suffix="+">0</span><span class="stat-label">Key Industries Served</span></div>
+        <div class="stat-block"><span class="stat-num" data-count="100" data-suffix="%">0</span><span class="stat-label">Focus on Quality &amp; Safety</span></div>
+      </div>
+    </div>
+
+    <div class="relative h-[380px] lg:h-[460px] rounded-2xl overflow-hidden why-visual reveal-up">
+      <button class="play-btn" aria-label="Watch our story">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+      </button>
+      <span class="absolute left-6 bottom-6 text-sm tracking-wide">Watch Our Story</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CAREERS ===== -->
+<section id="careers" class="relative section-pad border-t border-white/5 careers-bg">
+  <div class="absolute inset-0 careers-overlay"></div>
+  <div class="relative max-w-[1400px] mx-auto px-6 md:px-10 flex flex-wrap items-end justify-between gap-10">
+    <div>
+      <p class="eyebrow mb-4">04 — Careers</p>
+      <h2 class="section-title split-lines">Build Your Future <span class="text-accent">With Us.</span></h2>
+      <p class="mt-6 text-[var(--text-dim)] max-w-md reveal-up">Join a team of innovators, problem solvers and industry experts. Be a part of something bigger.</p>
+      <a href="career.html" class="btn-outline mt-8 reveal-up">
+        View Open Positions
+        <span class="btn-ring"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+    <div class="career-card reveal-up">
+      <p>Grow</p><p>Learn</p><p>Make an Impact</p>
+      <a href="career.html" class="career-arrow" aria-label="View open positions"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section-pad border-t border-white/5">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <p class="eyebrow mb-4">05 — Get in Touch</p>
+    <h2 class="section-title split-lines mb-14">Let's Build <span class="text-accent">Something Great.</span></h2>
+
+    <div class="grid md:grid-cols-3 gap-10 pt-10 border-t border-white/5">
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 3a2 2 0 0 1-.4 2.1L8 10.3a16 16 0 0 0 6 6l1.5-1.4a2 2 0 0 1 2.1-.4c1 .3 2 .5 3 .7a2 2 0 0 1 1.4 2z" stroke="var(--accent)" stroke-width="1.4"/></svg>
+        <a href="tel:+919072509773">+91 90725 09773</a>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z M4 6l8 7 8-7" stroke="var(--accent)" stroke-width="1.4"/></svg>
+        <a href="mailto:sales@monocoqueindia.com">sales@monocoqueindia.com</a>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="var(--accent)" stroke-width="1.4"/><path d="M12 7v5l3.5 2" stroke="var(--accent)" stroke-width="1.4"/></svg>
+        <span>Monday – Sunday, 10:00 AM – 07:00 PM</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="border-t border-white/5 pt-16 pb-8">
+  <div class="max-w-[1400px] mx-auto px-6 md:px-10">
+    <div class="grid md:grid-cols-[1.4fr_1fr_1fr] gap-12 pb-14">
+      <div>
+        <a href="#home" class="flex items-center gap-3 mb-4">
+          <img src="assets/logo.png" alt="Monocoque Pvt Ltd" class="h-11 md:h-12 w-auto mb-2">
+        </a>
+        <p class="text-[var(--text-dim)] text-sm max-w-xs leading-relaxed">Delivering precision engineering across Land, Sea and Sky.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigate</p>
+        <ul class="flex flex-col gap-2.5 text-sm text-[var(--text-dim)]">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About Us</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="sectors.html" class="footer-link">Industries</a></li>
+          <li><a href="career.html" class="footer-link">Careers</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <ul class="flex flex-col gap-2.5 text-sm text-[var(--text-dim)]">
+          <li>3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom, Kochi, Ernakulam, Kerala 682025</li>
+          <li><a href="tel:+919072509773" class="footer-link">+91 90725 09773</a></li>
+          <li><a href="mailto:sales@monocoqueindia.com" class="footer-link">sales@monocoqueindia.com</a></li>
+        </ul>
+        <div class="flex gap-4 mt-5">
+          <a href="#" aria-label="Facebook" class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z" stroke="currentColor" stroke-width="1.3"/></svg></a>
+          <a href="#" aria-label="Twitter / X" class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="1.3"/></svg></a>
+          <a href="#" aria-label="Instagram" class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.3"/><circle cx="16.5" cy="7.5" r="0.8" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-white/5 text-xs text-[var(--text-dim)]">
+      <span>© 2026 Monocoque Pvt Ltd. All rights reserved.</span>
+      <div class="flex gap-6"><a href="privacy.html" class="footer-link">Privacy Policy</a><a href="terms.html" class="footer-link">Terms &amp; Conditions</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919072509773" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Chat on WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 12a8 8 0 1 1-3.8-6.8L20 4l-1.2 3.8A7.9 7.9 0 0 1 20 12z" stroke="currentColor" stroke-width="1.4"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6l1-2-2.5-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2.5z" fill="currentColor"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
