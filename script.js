@@ -1,3 +1,37 @@
+/* ---------- Theme toggle (light by default, choice is remembered) ---------- */
+(function () {
+  const root = document.documentElement;
+  const LOGO_LIGHT = 'assets/logo-dark.png'; // dark-coloured logo for the light theme
+  const LOGO_DARK = 'assets/logo.png';        // light-coloured logo for the dark theme
+
+  function isDark() { return root.getAttribute('data-theme') === 'dark'; }
+
+  function sync() {
+    document.querySelectorAll('img[src$="logo-dark.png"], img[src$="/logo.png"]').forEach(img => {
+      const want = isDark() ? LOGO_DARK : LOGO_LIGHT;
+      if (img.getAttribute('src') !== want) img.setAttribute('src', want);
+    });
+    const btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.setAttribute('aria-label', isDark() ? 'Switch to light theme' : 'Switch to dark theme');
+      btn.setAttribute('aria-pressed', String(isDark()));
+    }
+  }
+
+  function setTheme(theme) {
+    if (theme === 'dark') root.setAttribute('data-theme', 'dark');
+    else root.removeAttribute('data-theme');
+    try { localStorage.setItem('theme', theme); } catch (e) { /* storage unavailable */ }
+    sync();
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    sync();
+    const btn = document.getElementById('themeToggle');
+    if (btn) btn.addEventListener('click', () => setTheme(isDark() ? 'light' : 'dark'));
+  });
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger);
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
