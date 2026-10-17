@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Monocoque Pvt Ltd</title>
   <meta name="description"
-    content="Get in touch with Monocoque Pvt Ltd — precision engineering in Kochi, Kerala. Call +91 90725 09773 or email sales@monocoqueindia.com.">
+    content="Get in touch with Monocoque Pvt Ltd — precision engineering with offices in Kochi, Kerala and Coimbatore, Tamil Nadu. Call +91 90725 09773 or email sales@monocoqueindia.com.">
   <link rel="canonical" href="https://monocoqueindia.com/contact.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contact Us | Monocoque Pvt Ltd">
@@ -31,7 +31,7 @@
   <script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ContactPage","about":{"@type":"EngineeringCompany","name":"Monocoque Pvt Ltd","telephone":"+91-90725-09773","email":"sales@monocoqueindia.com","address":{"@type":"PostalAddress","streetAddress":"3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom","addressLocality":"Kochi","addressRegion":"Kerala","postalCode":"682025","addressCountry":"IN"}}}
+{"@context":"https://schema.org","@type":"ContactPage","about":{"@type":"EngineeringCompany","name":"Monocoque Pvt Ltd","telephone":"+91-90725-09773","email":"sales@monocoqueindia.com","address":[{"@type":"PostalAddress","streetAddress":"3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom","addressLocality":"Kochi","addressRegion":"Kerala","postalCode":"682025","addressCountry":"IN"},{"@type":"PostalAddress","streetAddress":"Covai Tech Park, Tower No. 04, Floor No. 01, S.F.No. 258/2, 259/2A, Site No. 86, 87, Kovai Thiru Nagar, Kalapatty","addressLocality":"Coimbatore","addressRegion":"Tamil Nadu","postalCode":"641014","addressCountry":"IN"}]}}
 </script>
 </head>
 
@@ -161,7 +161,12 @@
             <div class="contact-item"><svg viewBox="0 0 24 24" fill="none">
                 <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z" stroke="var(--accent)" stroke-width="1.4" />
                 <circle cx="12" cy="9" r="2.5" stroke="var(--accent)" stroke-width="1.4" />
-              </svg><span>3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom, Kochi, Ernakulam, Kerala 682025</span>
+              </svg><span><strong class="office-label">Kochi Office</strong>3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom, Kochi, Ernakulam, Kerala 682025</span>
+            </div>
+            <div class="contact-item"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z" stroke="var(--accent)" stroke-width="1.4" />
+                <circle cx="12" cy="9" r="2.5" stroke="var(--accent)" stroke-width="1.4" />
+              </svg><span><strong class="office-label">Coimbatore Office</strong>Covai Tech Park, Tower No. 04, Floor No. 01, S.F.No. 258/2, 259/2A, Site No. 86, 87, Kovai Thiru Nagar, Kalapatty, Coimbatore, Tamil Nadu 641014</span>
             </div>
             <div class="contact-item"><svg viewBox="0 0 24 24" fill="none">
                 <circle cx="12" cy="12" r="9" stroke="var(--accent)" stroke-width="1.4" />
@@ -169,9 +174,18 @@
               </svg><span>Monday – Sunday, 10:00 AM – 07:00 PM</span></div>
           </div>
 
-          <iframe class="map-embed w-full h-[280px]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Maria+Arcade+Chathangattu+Rd+Palarivattom+Kochi+Kerala+682025&output=embed">
-          </iframe>
+          <div class="map-switch">
+            <div class="map-tabs" role="tablist" aria-label="Office location">
+              <button type="button" class="map-tab active" role="tab" aria-selected="true" data-map="map-kochi">Kochi Office</button>
+              <button type="button" class="map-tab" role="tab" aria-selected="false" data-map="map-coimbatore">Coimbatore Office</button>
+            </div>
+            <iframe id="map-kochi" class="map-embed w-full h-[280px]" title="Kochi Office map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Maria+Arcade+Chathangattu+Rd+Palarivattom+Kochi+Kerala+682025&output=embed">
+            </iframe>
+            <iframe id="map-coimbatore" class="map-embed w-full h-[280px]" title="Coimbatore Office map" hidden loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Covai+Tech+Park+Kalapatty+Coimbatore+641014&output=embed">
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -184,10 +198,7 @@
           <a href="index.html" class="flex items-center gap-3 mb-4"><img src="assets/logo-dark.png" alt="Monocoque Pvt Ltd"
               class="h-11 md:h-12 w-auto mb-2"></a>
           <p class="text-[var(--text-dim)] text-sm max-w-xs leading-relaxed">Monocoque Pvt Ltd is an engineering and manufacturing solutions company delivering precision-engineered products and services for demanding industrial applications across Marine &amp; Shipbuilding, Oil &amp; Gas, Aerospace &amp; Defence, Automotive, Construction Equipment and Industrial Engineering.</p>
-          <a href="about.html#certification" class="iso-badge iso-badge-sm" aria-label="ISO certified">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7z" stroke="currentColor" stroke-width="1.5" /></svg>
-            <span><strong>ISO Certified</strong><em>Quality Management System</em></span>
-          </a>
+          <div class="iso-logos iso-logos-sm"><a href="about.html#certification" class="iso-logo" title="ISO 9001 - Quality Management"><img src="assets/iso-9001.svg" alt="ISO 9001 certified - Quality Management" width="72" height="72" loading="lazy"></a><a href="about.html#certification" class="iso-logo" title="ISO 14001 - Environmental Management"><img src="assets/iso-14001.svg" alt="ISO 14001 certified - Environmental Management" width="72" height="72" loading="lazy"></a><a href="about.html#certification" class="iso-logo" title="ISO 45001 - Occupational Health &amp; Safety"><img src="assets/iso-45001.svg" alt="ISO 45001 certified - Occupational Health &amp; Safety" width="72" height="72" loading="lazy"></a></div>
           <div class="flex gap-4 mt-5">
             <a href="https://www.instagram.com/monocoqueindia" target="_blank" rel="noopener" aria-label="Instagram"
               class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
@@ -220,7 +231,8 @@
         <div>
           <p class="footer-heading">Contact</p>
           <ul class="flex flex-col gap-2.5 text-sm text-[var(--text-dim)]">
-            <li>3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom, Kochi, Ernakulam, Kerala 682025</li>
+            <li><span class="office-label">Kochi Office</span>3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom, Kochi, Ernakulam, Kerala 682025</li>
+            <li><span class="office-label">Coimbatore Office</span>Covai Tech Park, Tower No. 04, Floor No. 01, S.F.No. 258/2, 259/2A, Site No. 86, 87, Kovai Thiru Nagar, Kalapatty, Coimbatore, Tamil Nadu 641014</li>
             <li><a href="tel:+919072509773" class="footer-link">+91 90725 09773</a></li>
             <li><a href="mailto:sales@monocoqueindia.com" class="footer-link">sales@monocoqueindia.com</a></li>
           </ul>
@@ -300,6 +312,20 @@
       } catch (err) {
         status.textContent = 'Network error. Please try again.';
       }
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.map-tab').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        document.querySelectorAll('.map-tab').forEach(function (t) {
+          var on = t === tab;
+          t.classList.toggle('active', on);
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        document.querySelectorAll('.map-switch iframe').forEach(function (m) {
+          m.hidden = m.id !== tab.dataset.map;
+        });
+      });
     });
   </script>
 </body>

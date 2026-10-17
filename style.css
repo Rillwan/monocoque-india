@@ -2053,3 +2053,95 @@ html[data-theme="dark"] .nav-cta {
 html[data-theme="dark"] .nav-cta:hover {
   background-color: #0b1322;
 }
+
+/* ============ ISO certification logos & multi-office layout ============ */
+.iso-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px
+}
+
+.iso-logo {
+  display: inline-flex;
+  transition: transform .3s
+}
+
+.iso-logo:hover {
+  transform: translateY(-3px)
+}
+
+.iso-logo img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  object-fit: contain
+}
+
+.iso-logos-sm {
+  margin-top: 18px;
+  gap: 10px
+}
+
+.iso-logos-sm .iso-logo img {
+  width: 54px;
+  height: 54px
+}
+
+.office-label {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--accent)
+}
+
+.contact-item strong.office-label {
+  font-weight: 600
+}
+
+.contact-item .office-label+* {
+  color: inherit
+}
+
+.map-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px
+}
+
+.map-tab {
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color .3s, color .3s, background .3s
+}
+
+.map-tab:hover {
+  border-color: var(--accent);
+  color: var(--text)
+}
+
+.map-tab.active {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+  color: var(--accent)
+}
+
+.map-embed[hidden] {
+  display: none
+}
+
+@media (max-width: 640px) {
+  .iso-logo img {
+    width: 60px;
+    height: 60px
+  }
+}
