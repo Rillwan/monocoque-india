@@ -38,13 +38,14 @@ $mail = new PHPMailer(true);
 
 try {
     // 5. SMTP configuration — Hostinger credentials
+    $cfg = require 'mail-config.php';
     $mail->isSMTP();
-    $mail->Host       = 'smtp.hostinger.com';
+    $mail->Host       = $cfg['host'];
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'contact@chatjy.com';
-    $mail->Password   = '3o5oHq7:';
+    $mail->Username   = $cfg['username'];
+    $mail->Password   = $cfg['password'];
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-    $mail->Port       = 465;
+    $mail->Port       = $cfg['port'];
 
     // 6. Email to YOU (admin notification)
     $mail->setFrom('noreply@monocoqueindia.com', 'Monocoque Website');

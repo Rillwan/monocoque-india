@@ -1,262 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Industries We Serve | Monocoque Pvt Ltd</title>
-  <meta name="description"
-    content="Monocoque Pvt Ltd serves Marine & Shipbuilding, Oil & Gas, Aerospace & Defence, Construction & Heavy Equipment, Automotive, Industrial Manufacturing, Energy & Process and Infrastructure industries from Kochi, Kerala.">
-  <link rel="canonical" href="https://monocoqueindia.com/sectors.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Industries We Serve | Monocoque Pvt Ltd">
-  <meta property="og:description"
-    content="Marine Engineering & Offshore, Automobile Component Manufacturing, Aerospace & Aircraft Engineering, Defence, and Oil & Gas.">
-  <meta property="og:url" content="https://monocoqueindia.com/sectors.html">
-  <meta property="og:image" content="https://monocoqueindia.com/assets/og-image.jpg">
-  <meta property="og:locale" content="en_IN">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Industries We Serve | Monocoque Pvt Ltd">
-  <meta name="twitter:description"
-    content="Marine, Automobile, Aerospace, Defence and Oil & Gas engineering solutions from Kochi, Kerala.">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-  <script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
-  <link rel="stylesheet" href="style.css">
-  <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
- {"@type":"ListItem","position":1,"name":"Home","item":"https://monocoqueindia.com/"},
- {"@type":"ListItem","position":2,"name":"Industries","item":"https://monocoqueindia.com/sectors.html"}
-]}
-</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Industries | Monocoque India</title>
+<meta name="description" content="Engineering and manufacturing solutions for marine, oil & gas, aerospace, defence, construction, automotive, industrial, energy and infrastructure sectors.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Industries | Monocoque India">
+<meta property="og:description" content="Engineering Precision. Manufacturing Excellence. Building the Future.">
+<meta property="og:image" content="assets/og-image-photo.jpg">
+<link rel="icon" type="image/png" href="assets/favicon-new.png">
+<link rel="stylesheet" href="css/site.css">
 </head>
-
-<body class="bg-[var(--bg)] text-[var(--text)] antialiased overflow-x-hidden">
-
-  <div id="preloader" aria-hidden="true">
-    <div class="preloader-mark">
-      <img src="./favicon.svg" alt="" class="preloader-logo">
-      <svg viewBox="0 0 100 100" width="64" height="64">
-        <circle cx="50" cy="50" r="42" fill="none" stroke="var(--line)" stroke-width="2" />
-        <circle id="preloader-ring" cx="50" cy="50" r="42" fill="none" stroke="var(--accent)" stroke-width="2"
-          stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="264" />
-      </svg>
-    </div>
-  </div>
-
-  <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-500 scrolled">
-    <nav class="max-w-[1400px] mx-auto flex items-center justify-between px-6 md:px-10 py-5">
-      <a href="index.html" class="flex items-center gap-3 shrink-0" aria-label="Monocoque home">
-        <img src="assets/logo-dark.png" alt="Monocoque Pvt Ltd" class="h-11 md:h-12 w-auto">
-      </a>
-      <ul class="hidden lg:flex items-center gap-9 text-[13.5px] text-[var(--text-dim)] tracking-wide font-medium">
-        <li><a href="index.html#home" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="sectors.html" class="nav-link active">Industries</a></li>
-        <li><a href="career.html" class="nav-link">Careers</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="flex items-center gap-3">
-      <button id="themeToggle" type="button" class="theme-toggle" aria-label="Switch to dark theme" title="Switch theme">
-        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6" />
-          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
-        </svg>
-      </button>
-      <a href="contact.html"
-        class="hidden md:inline-flex font-medium items-center gap-2 border border-[var(--accent)]/50 hover:border-[var(--accent)] hover:bg-[var(--accent)]/10 transition-colors duration-300 text-[13px] tracking-wide px-5 py-2.5 rounded-full">
-        Get in Touch
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-          <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </a>
-      <button id="menuToggle" class="lg:hidden flex flex-col gap-[5px] w-8 h-8 items-center justify-center"
-        aria-label="Toggle menu" aria-expanded="false">
-        <span class="menu-bar w-6 h-[1.5px] bg-[var(--text)] transition-all duration-300"></span>
-        <span class="menu-bar w-6 h-[1.5px] bg-[var(--text)] transition-all duration-300"></span>
-      </button>
-      </div>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/><circle cx="12" cy="12" r="7"/></symbol>
+<symbol id="leaf" viewBox="0 0 24 24"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15z"/><path d="M5 19c3-4 6-7 10-9"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M17 14c2.5 0 4 2 4 5"/></symbol>
+<symbol id="ship" viewBox="0 0 24 24"><path d="M3 15l2 4h14l2-4z"/><path d="M6 15V10h12v5M9 10V6h6v4M12 6V3"/></symbol>
+<symbol id="drop" viewBox="0 0 24 24"><path d="M12 3c4 5 6 8 6 11a6 6 0 01-12 0c0-3 2-6 6-11z"/></symbol>
+<symbol id="plane" viewBox="0 0 24 24"><path d="M21 4L3 11l6 2 2 6 3-4 5 3z"/></symbol>
+<symbol id="car" viewBox="0 0 24 24"><path d="M4 16v-4l2-5h12l2 5v4zM4 16v2M20 16v2M4 12h16"/><circle cx="8" cy="14.5" r=".6"/><circle cx="16" cy="14.5" r=".6"/></symbol>
+<symbol id="plant" viewBox="0 0 24 24"><path d="M3 20V9l6 4V9l6 4V5h3v15zM3 20h18"/></symbol>
+<symbol id="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</defs></svg>
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Monocoque India home"><img src="assets/logo-new.png" alt="Monocoque"></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a class="on" href="sectors.html">Industries</a>
+      <a href="career.html">Careers</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <div id="mobileMenu" class="lg:hidden max-h-0 overflow-hidden transition-all duration-500">
-      <ul class="flex flex-col gap-1 px-6 py-6 text-sm">
-        <li><a href="index.html#home" class="mobile-link">Home</a></li>
-        <li><a href="about.html" class="mobile-link">About</a></li>
-        <li><a href="services.html" class="mobile-link">Services</a></li>
-        <li><a href="sectors.html" class="mobile-link">Industries</a></li>
-        <li><a href="career.html" class="mobile-link">Careers</a></li>
-        <li><a href="contact.html" class="mobile-link">Contact</a></li>
-      </ul>
+    <a class="btn btn-p" href="contact.html">Get a Quote</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+</header>
+<main>
+<section class="ph"><div class="ph-img"><img src="assets/hero-sectors.jpg" alt=""></div><div class="wrap"><div><p class="crumb"><a href="index.html">Home</a> / Industries</p><p class="eyebrow">Industries We Serve</p><h1>Powering Progress Across Key Industries.</h1><p class="lead">We bring deep technical expertise and a proven record of delivering complex projects with precision and reliability.</p></div></div></section><section class="sec"><div class="wrap"><div class="cards c4"><a class="card" href="contact.html"><img src="assets/industry-marine.jpg" alt="" loading="lazy"><h3>Marine &amp; Shipbuilding</h3><p>Engineering and manufacturing solutions for shipbuilding, ship repair, marine equipment, and offshore applications.</p></a><a class="card" href="contact.html"><img src="assets/industry-oilgas.jpg" alt="" loading="lazy"><h3>Oil &amp; Gas</h3><p>Engineered components, fabrication, and industrial supply solutions for demanding operating environments.</p></a><a class="card" href="contact.html"><img src="assets/industry-aerospace.jpg" alt="" loading="lazy"><h3>Aerospace &amp; Defence</h3><p>Precision engineering and manufacturing solutions requiring dimensional accuracy, material performance, and reliability.</p></a><a class="card" href="contact.html"><img src="assets/service-construction.jpg" alt="" loading="lazy"><h3>Construction &amp; Heavy Equipment</h3><p>Manufacturing and fabrication solutions for construction machinery, heavy equipment, and industrial infrastructure.</p></a><a class="card" href="contact.html"><img src="assets/industry-automobile.jpg" alt="" loading="lazy"><h3>Automotive &amp; Transportation</h3><p>Precision manufacturing, component development, and engineering solutions for transportation systems.</p></a><a class="card" href="contact.html"><img src="assets/service-manufacturing.jpg" alt="" loading="lazy"><h3>Industrial Manufacturing</h3><p>Engineering and manufacturing solutions for industrial machinery, production facilities, and process equipment.</p></a><a class="card" href="contact.html"><img src="assets/service-cnc.jpg" alt="" loading="lazy"><h3>Energy &amp; Process Industries</h3><p>Engineered products and customised industrial solutions for power generation, petrochemical, and process industries.</p></a><a class="card" href="contact.html"><img src="assets/service-quality.jpg" alt="" loading="lazy"><h3>Infrastructure &amp; Construction</h3><p>Structural engineering, fabrication, and project-based manufacturing solutions for commercial and industrial infrastructure.</p></a></div></div></section><section class="sec cta-band"><div class="wrap"><p class="eyebrow" style="justify-content:center">Get in Touch</p><h2>Looking for an engineering partner in your sector?</h2><p class="lead">Share your requirement and our engineers will respond with a clear plan and quote.</p><div class="row"><a class="btn btn-p" href="contact.html">Request a Quote</a><a class="btn btn-o" href="services.html">View Services</a></div></div></section>
+</main>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="g">
+      <div>
+        <a class="logo" href="index.html"><img src="assets/logo-new.png" alt="Monocoque"></a>
+        <p style="margin-top:18px;max-width:340px">Monocoque Pvt Ltd is a leading engineering company with over decades of expertise across the Marine, Oil &amp; Gas, Automobile, Aerospace, Defence and other industrial sectors.</p>
+        <div class="soc"><a href="https://instagram.com/monocoqueindia" aria-label="Instagram" target="_blank" rel="noopener">In</a><a href="https://x.com/Monocoqueindia" aria-label="X" target="_blank" rel="noopener">X</a><a href="https://facebook.com/share/18Nqrsx1s8" aria-label="Facebook" target="_blank" rel="noopener">Fb</a></div>
+      </div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="sectors.html">Industries</a></li><li><a href="career.html">Careers</a></li></ul></div>
+      <div><h4>Capabilities</h4><ul><li><a href="capability-manufacturing.html">Advanced Manufacturing</a></li><li><a href="capability-prototyping.html">Precision Engineering</a></li><li><a href="capability-cnc.html">CNC / CAD-CAM</a></li><li><a href="capability-quality.html">Quality Control</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+919072509773">+91 90725 09773</a></li><li><a href="mailto:sales@monocoqueindia.com">sales@monocoqueindia.com</a></li><li><strong style="color:#fff">Kochi:</strong> 3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom, Kochi, Kerala 682025</li><li><strong style="color:#fff">Coimbatore:</strong> Covai Tech Park, Tower No. 04, Floor No. 01, Kovai Thiru Nagar, Kalapatty, Coimbatore, Tamil Nadu 641014</li></ul></div>
     </div>
-  </header>
-
-  <main>
-    <section class="page-hero relative flex items-end min-h-[52vh]">
-      <div class="hero-bg hero-sectors-bg absolute inset-0"></div>
-      <div class="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 pb-16 w-full">
-        <p class="eyebrow mb-4">Industries We Serve</p>
-        <h1 class="hero-title split-lines max-w-3xl">Powering Progress Across <span class="text-accent">Key
-            Industries.</span></h1>
-      </div>
-    </section>
-
-    <section class="section-pad border-t border-white/5">
-      <div class="max-w-[1400px] mx-auto px-6 md:px-10">
-
-                <div class="sector-row reveal-up">
-          <div class="sector-visual sector-visual-marine" style="background:linear-gradient(180deg,rgba(6,11,20,.35),rgba(6,11,20,.82)),url('assets/industry-marine.jpg') center/cover no-repeat"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17h18M5 17V9l3-3h8l3 3v8M9 6h6M7 21l1-4M17 21l-1-4" stroke="var(--accent)" stroke-width="1.4" /></svg></div>
-          <div class="sector-text"><span class="ind-num eyebrow">01</span>
-            <h2>Marine &amp; Shipbuilding</h2>
-            <p>Engineering and manufacturing solutions for shipbuilding, ship repair, marine equipment, and offshore applications.</p>
-          </div>
-        </div>
-
-        <div class="sector-row reverse reveal-up">
-          <div class="sector-text"><span class="ind-num eyebrow">02</span>
-            <h2>Oil &amp; Gas</h2>
-            <p>Engineered components, fabrication, and industrial supply solutions for demanding operating environments.</p>
-          </div>
-          <div class="sector-visual sector-visual-marine" style="background:linear-gradient(180deg,rgba(6,11,20,.35),rgba(6,11,20,.82)),url('assets/industry-oilgas.jpg') center/cover no-repeat"><svg viewBox="0 0 24 24" fill="none"><path d="M9 21V9l3-6 3 6v12M6 21h12" stroke="var(--accent)" stroke-width="1.4" /></svg></div>
-        </div>
-
-        <div class="sector-row reveal-up">
-          <div class="sector-visual sector-visual-marine" style="background:linear-gradient(180deg,rgba(6,11,20,.35),rgba(6,11,20,.82)),url('assets/industry-aerospace.jpg') center/cover no-repeat"><svg viewBox="0 0 24 24" fill="none"><path d="M2 16l20-6-3 8-6-2-3 4-2-5z" stroke="var(--accent)" stroke-width="1.4" /></svg></div>
-          <div class="sector-text"><span class="ind-num eyebrow">03</span>
-            <h2>Aerospace &amp; Defence</h2>
-            <p>Precision engineering and manufacturing solutions requiring dimensional accuracy, material performance, and reliability.</p>
-          </div>
-        </div>
-
-        <div class="sector-row reverse reveal-up">
-          <div class="sector-text"><span class="ind-num eyebrow">04</span>
-            <h2>Construction &amp; Heavy Equipment</h2>
-            <p>Manufacturing and fabrication solutions for construction machinery, heavy equipment, and industrial infrastructure.</p>
-          </div>
-          <div class="sector-visual sector-visual-marine" style="background:linear-gradient(180deg,rgba(6,11,20,.35),rgba(6,11,20,.82)),url('assets/service-construction.jpg') center/cover no-repeat"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21V9l9-6 9 6v12M9 21v-6h6v6" stroke="var(--accent)" stroke-width="1.4" /></svg></div>
-        </div>
-
-        <div class="sector-row reveal-up">
-          <div class="sector-visual sector-visual-marine" style="background:linear-gradient(180deg,rgba(6,11,20,.35),rgba(6,11,20,.82)),url('assets/industry-automobile.jpg') center/cover no-repeat"><svg viewBox="0 0 24 24" fill="none"><path d="M3 13l2-5h6l3 5M3 13h16M6 17h1M17 17h1" stroke="var(--accent)" stroke-width="1.4" /></svg></div>
-          <div class="sector-text"><span class="ind-num eyebrow">05</span>
-            <h2>Automotive &amp; Transportation</h2>
-            <p>Precision manufacturing, component development, and engineering solutions for transportation systems.</p>
-          </div>
-        </div>
-
-        <div class="sector-row reverse reveal-up">
-          <div class="sector-text"><span class="ind-num eyebrow">06</span>
-            <h2>Industrial Manufacturing</h2>
-            <p>Engineering and manufacturing solutions for industrial machinery, production facilities, and process equipment.</p>
-          </div>
-          <div class="sector-visual sector-visual-marine" style="background:linear-gradient(180deg,rgba(6,11,20,.35),rgba(6,11,20,.82)),url('assets/hero-services.jpg') center/cover no-repeat"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="var(--accent)" stroke-width="1.4" /><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="var(--accent)" stroke-width="1.4" /></svg></div>
-        </div>
-
-        <div class="sector-row reveal-up">
-          <div class="sector-visual sector-visual-marine" style="background:linear-gradient(180deg,rgba(6,11,20,.35),rgba(6,11,20,.82)),url('assets/hero-sectors.jpg') center/cover no-repeat"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7z" stroke="var(--accent)" stroke-width="1.4" /></svg></div>
-          <div class="sector-text"><span class="ind-num eyebrow">07</span>
-            <h2>Energy &amp; Process Industries</h2>
-            <p>Engineered products and customised industrial solutions for power generation, petrochemical, and process industries.</p>
-          </div>
-        </div>
-
-        <div class="sector-row reverse reveal-up">
-          <div class="sector-text"><span class="ind-num eyebrow">08</span>
-            <h2>Infrastructure &amp; Construction</h2>
-            <p>Structural engineering, fabrication, and project-based manufacturing solutions for commercial and industrial infrastructure.</p>
-          </div>
-          <div class="sector-visual sector-visual-marine" style="background:linear-gradient(180deg,rgba(6,11,20,.35),rgba(6,11,20,.82)),url('assets/careers-bg.jpg') center/cover no-repeat"><svg viewBox="0 0 24 24" fill="none"><path d="M3 21h18M6 21V8h12v13M9 12h2M13 12h2M9 16h2M13 16h2M10 8V4h4v4" stroke="var(--accent)" stroke-width="1.4" /></svg></div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section-pad bg-[var(--bg-alt)] border-t border-white/5 text-center">
-      <div class="max-w-2xl mx-auto px-6">
-        <h2 class="section-title split-lines mb-6">Looking for an engineering partner in your sector?</h2>
-        <a href="contact.html" class="btn-outline mx-auto w-fit">Talk to Our Team<span class="btn-ring"><svg width="14"
-              height="14" viewBox="0 0 24 24" fill="none">
-              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg></span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="border-t border-white/5 pt-16 pb-8">
-    <div class="max-w-[1400px] mx-auto px-6 md:px-10">
-      <div class="grid md:grid-cols-[1.4fr_1fr_1fr] gap-12 pb-14">
-        <div>
-          <a href="index.html" class="flex items-center gap-3 mb-4"><img src="assets/logo-dark.png" alt="Monocoque Pvt Ltd"
-              class="h-11 md:h-12 w-auto mb-2"></a>
-          <p class="text-[var(--text-dim)] text-sm max-w-xs leading-relaxed">Monocoque Pvt Ltd is an engineering and manufacturing solutions company delivering precision-engineered products and services for demanding industrial applications across Marine &amp; Shipbuilding, Oil &amp; Gas, Aerospace &amp; Defence, Automotive, Construction Equipment and Industrial Engineering.</p>
-          <div class="iso-logos iso-logos-sm"><a href="about.html#certification" class="iso-logo" title="ISO 9001 - Quality Management"><img src="assets/iso-9001.svg" alt="ISO 9001 certified - Quality Management" width="72" height="72" loading="lazy"></a><a href="about.html#certification" class="iso-logo" title="ISO 14001 - Environmental Management"><img src="assets/iso-14001.svg" alt="ISO 14001 certified - Environmental Management" width="72" height="72" loading="lazy"></a><a href="about.html#certification" class="iso-logo" title="ISO 45001 - Occupational Health &amp; Safety"><img src="assets/iso-45001.svg" alt="ISO 45001 certified - Occupational Health &amp; Safety" width="72" height="72" loading="lazy"></a></div>
-          <div class="flex gap-4 mt-5">
-            <a href="https://www.instagram.com/monocoqueindia" target="_blank" rel="noopener" aria-label="Instagram"
-              class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.3" />
-                <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.3" />
-                <circle cx="16.5" cy="7.5" r="0.8" fill="currentColor" />
-              </svg></a>
-            <a href="https://x.com/Monocoqueindia" target="_blank" rel="noopener" aria-label="X (Twitter)"
-              class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="1.3" />
-              </svg></a>
-            <a href="https://www.facebook.com/share/18Nqrsx1s8/" target="_blank" rel="noopener" aria-label="Facebook"
-              class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z" stroke="currentColor"
-                  stroke-width="1.3" />
-              </svg></a>
-          </div>
-        </div>
-        <div>
-          <p class="footer-heading">Navigate</p>
-          <ul class="flex flex-col gap-2.5 text-sm text-[var(--text-dim)]">
-            <li><a href="index.html#home" class="footer-link">Home</a></li>
-            <li><a href="index.html#about" class="footer-link">About Us</a></li>
-            <li><a href="services.html" class="footer-link">Services</a></li>
-            <li><a href="sectors.html" class="footer-link">Industries</a></li>
-            <li><a href="career.html" class="footer-link">Careers</a></li>
-            <li><a href="contact.html" class="footer-link">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="footer-heading">Contact</p>
-          <ul class="flex flex-col gap-2.5 text-sm text-[var(--text-dim)]">
-            <li><span class="office-label">Kochi Office</span>3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom, Kochi, Ernakulam, Kerala 682025</li>
-            <li><span class="office-label">Coimbatore Office</span>Covai Tech Park, Tower No. 04, Floor No. 01, S.F.No. 258/2, 259/2A, Site No. 86, 87, Kovai Thiru Nagar, Kalapatty, Coimbatore, Tamil Nadu 641014</li>
-            <li><a href="tel:+919072509773" class="footer-link">+91 90725 09773</a></li>
-            <li><a href="mailto:sales@monocoqueindia.com" class="footer-link">sales@monocoqueindia.com</a></li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-white/5 text-xs text-[var(--text-dim)]">
-        <span>© 2026 Monocoque Pvt Ltd. All rights reserved.</span>
-        <div class="flex gap-6"><a href="/" class="footer-link">Privacy Policy</a><a href="/" class="footer-link">Terms
-            &amp; Conditions</a></div>
-      </div>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/919072509773" target="_blank" rel="noopener" class="whatsapp-btn"
-    aria-label="Chat on WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M20 12a8 8 0 1 1-3.8-6.8L20 4l-1.2 3.8A7.9 7.9 0 0 1 20 12z" stroke="currentColor" stroke-width="1.4" />
-      <path d="M8.5 9.5c0 3.5 2.5 6 6 6l1-2-2.5-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2.5z" fill="currentColor" />
-    </svg></a>
-
-  <script src="script.js"></script>
+    <div class="bot"><span>&copy; 2026 Monocoque Pvt Ltd. All rights reserved.</span><span>Kochi &middot; Coimbatore</span></div>
+  </div>
+</footer>
+<script src="js/site.js"></script>
 </body>
-
 </html>

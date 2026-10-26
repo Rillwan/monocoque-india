@@ -134,7 +134,8 @@ h3,
   transform: translateY(-3.25px) rotate(-45deg);
 }
 
-/* ---------- Hero ---------- */
+/* ---------- Hero ---------- */ 
+
 .hero-bg {
   background:
     radial-gradient(ellipse 60% 50% at 75% 30%, rgba(11, 120, 184, 0.10), transparent 60%),
@@ -146,7 +147,7 @@ h3,
   /* background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.58) 0%, rgba(255, 255, 255, 0.25) 40%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 25%, rgba(247, 250, 253, 0.08) 70%, rgba(247, 250, 253, 0.95) 100%),
     url('assets/hero-ship.jpg') center 30%/cover no-repeat; */
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%), url('assets/hero-ship.jpg') center 30%/cover no-repeat;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%), url('assets/hero-ship.jpg') center 30%/cover no-repeat;
 }
 
 .hero-services-bg {
@@ -2035,21 +2036,23 @@ html[data-theme="dark"] .page-hero .hero-sub {
 
 /* Get in Touch button */
 .nav-cta {
-  background-color: #ffffff94;   
+  background-color: #ffffff94;
   color: #0b1f3a;
   border-color: #0b78b8;
   font-weight: 500;
   border-width: 1px;
 }
+
 .nav-cta:hover {
   background-color: #f1f5fa;
 }
 
 html[data-theme="dark"] .nav-cta {
-  background-color: #00000093;  
+  background-color: #00000093;
   color: #ffffff;
   border-color: #6fc6f2;
 }
+
 html[data-theme="dark"] .nav-cta:hover {
   background-color: #0b1322;
 }

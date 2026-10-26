@@ -1,242 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Monocoque Pvt Ltd</title>
-  <meta name="description"
-    content="About Monocoque Pvt Ltd — an engineering and manufacturing solutions company in Kochi, Kerala delivering precision-engineered products and services for Marine, Oil & Gas, Aerospace & Defence, Automotive and Industrial sectors. ISO 9001, 14001 & 45001 certified.">
-  <link rel="canonical" href="https://monocoqueindia.com/about.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="About Us | Monocoque Pvt Ltd">
-  <meta property="og:description"
-    content="Engineering and manufacturing solutions company delivering precision-engineered products and services for Marine, Oil & Gas, Aerospace & Defence, Automotive and Industrial sectors.">
-  <meta property="og:url" content="https://monocoqueindia.com/about.html">
-  <meta property="og:image" content="https://monocoqueindia.com/assets/og-image.jpg">
-  <meta property="og:locale" content="en_IN">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About Us | Monocoque Pvt Ltd">
-  <meta name="twitter:description"
-    content="Engineering Precision. Manufacturing Excellence. Building the Future.">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-  <script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
-  <link rel="stylesheet" href="style.css">
-  <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"AboutPage","about":{"@type":"EngineeringCompany","name":"Monocoque Pvt Ltd","foundingDate":"2003","description":"Engineering and manufacturing solutions company delivering precision-engineered products and services across Marine & Shipbuilding, Oil & Gas, Aerospace & Defence, Automotive, Construction Equipment and Industrial Engineering.","slogan":"Engineering Precision. Manufacturing Excellence. Building the Future."}}
-</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | Monocoque India</title>
+<meta name="description" content="Monocoque Pvt Ltd is an engineering and manufacturing solutions company serving marine, oil & gas, aerospace, defence and industrial sectors.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="About Us | Monocoque India">
+<meta property="og:description" content="Engineering Precision. Manufacturing Excellence. Building the Future.">
+<meta property="og:image" content="assets/og-image-photo.jpg">
+<link rel="icon" type="image/png" href="assets/favicon-new.png">
+<link rel="stylesheet" href="css/site.css">
 </head>
-
-<body class="bg-[var(--bg)] text-[var(--text)] antialiased overflow-x-hidden">
-
-  <div id="preloader" aria-hidden="true">
-    <div class="preloader-mark">
-      <img src="./favicon.svg" alt="" class="preloader-logo">
-      <svg viewBox="0 0 100 100" width="64" height="64">
-        <circle cx="50" cy="50" r="42" fill="none" stroke="var(--line)" stroke-width="2" />
-        <circle id="preloader-ring" cx="50" cy="50" r="42" fill="none" stroke="var(--accent)" stroke-width="2"
-          stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="264" />
-      </svg>
-    </div>
-  </div>
-
-  <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-500 scrolled">
-    <nav class="max-w-[1400px] mx-auto flex items-center justify-between px-6 md:px-10 py-5">
-      <a href="index.html" class="flex items-center gap-3 shrink-0" aria-label="Monocoque home">
-        <img src="assets/logo-dark.png" alt="Monocoque Pvt Ltd" class="h-11 md:h-12 w-auto">
-      </a>
-      <ul class="hidden lg:flex items-center gap-9 text-[13.5px] text-[var(--text-dim)] tracking-wide font-medium">
-        <li><a href="index.html#home" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link active">About</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="sectors.html" class="nav-link">Industries</a></li>
-        <li><a href="career.html" class="nav-link">Careers</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="flex items-center gap-3">
-      <button id="themeToggle" type="button" class="theme-toggle" aria-label="Switch to dark theme" title="Switch theme">
-        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6" />
-          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
-        </svg>
-      </button>
-      <a href="contact.html"
-        class="hidden md:inline-flex font-medium items-center gap-2 border border-[var(--accent)]/50 hover:border-[var(--accent)] hover:bg-[var(--accent)]/10 transition-colors duration-300 text-[13px] tracking-wide px-5 py-2.5 rounded-full">
-        Get in Touch
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-          <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </a>
-      <button id="menuToggle" class="lg:hidden flex flex-col gap-[5px] w-8 h-8 items-center justify-center"
-        aria-label="Toggle menu" aria-expanded="false">
-        <span class="menu-bar w-6 h-[1.5px] bg-[var(--text)] transition-all duration-300"></span>
-        <span class="menu-bar w-6 h-[1.5px] bg-[var(--text)] transition-all duration-300"></span>
-      </button>
-      </div>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/><circle cx="12" cy="12" r="7"/></symbol>
+<symbol id="leaf" viewBox="0 0 24 24"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15z"/><path d="M5 19c3-4 6-7 10-9"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M17 14c2.5 0 4 2 4 5"/></symbol>
+<symbol id="ship" viewBox="0 0 24 24"><path d="M3 15l2 4h14l2-4z"/><path d="M6 15V10h12v5M9 10V6h6v4M12 6V3"/></symbol>
+<symbol id="drop" viewBox="0 0 24 24"><path d="M12 3c4 5 6 8 6 11a6 6 0 01-12 0c0-3 2-6 6-11z"/></symbol>
+<symbol id="plane" viewBox="0 0 24 24"><path d="M21 4L3 11l6 2 2 6 3-4 5 3z"/></symbol>
+<symbol id="car" viewBox="0 0 24 24"><path d="M4 16v-4l2-5h12l2 5v4zM4 16v2M20 16v2M4 12h16"/><circle cx="8" cy="14.5" r=".6"/><circle cx="16" cy="14.5" r=".6"/></symbol>
+<symbol id="plant" viewBox="0 0 24 24"><path d="M3 20V9l6 4V9l6 4V5h3v15zM3 20h18"/></symbol>
+<symbol id="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</defs></svg>
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Monocoque India home"><img src="assets/logo-new.png" alt="Monocoque"></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a class="on" href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="sectors.html">Industries</a>
+      <a href="career.html">Careers</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <div id="mobileMenu" class="lg:hidden max-h-0 overflow-hidden transition-all duration-500">
-      <ul class="flex flex-col gap-1 px-6 py-6 text-sm">
-        <li><a href="index.html#home" class="mobile-link">Home</a></li>
-        <li><a href="about.html" class="mobile-link">About</a></li>
-        <li><a href="services.html" class="mobile-link">Services</a></li>
-        <li><a href="sectors.html" class="mobile-link">Industries</a></li>
-        <li><a href="career.html" class="mobile-link">Careers</a></li>
-        <li><a href="contact.html" class="mobile-link">Contact</a></li>
-      </ul>
+    <a class="btn btn-p" href="contact.html">Get a Quote</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+</header>
+<main>
+<section class="ph"><div class="ph-img"><img src="assets/about-marine.jpg" alt=""></div><div class="wrap"><div><p class="crumb"><a href="index.html">Home</a> / About Us</p><p class="eyebrow">About Monocoque Pvt Ltd</p><h1>Precision-engineered solutions for demanding industries.</h1><p class="lead">Engineering Precision. Manufacturing Excellence. Building the Future.</p></div></div></section>
+<section class="sec"><div class="wrap two"><div><p class="eyebrow">Who We Are</p><h2>An engineering and manufacturing solutions company.</h2>
+<p>Monocoque Pvt Ltd delivers precision-engineered products and services for demanding industrial applications across Marine &amp; Shipbuilding, Oil &amp; Gas, Aerospace &amp; Defence, Automotive, Construction Equipment and Industrial Engineering.</p>
+<p>Our capabilities include engineering design and analysis, precision machining, heavy structural fabrication, welding, casting and forging, piping solutions, composite structures, industrial components, repair and maintenance, and customised manufacturing.</p>
+<p>We turn engineering requirements into practical, manufacturable and cost-effective solutions, from concept and design through manufacturing, inspection, testing and delivery, with a strong commitment to quality, safety, precision and reliability.</p>
+<p>We follow recognised engineering practices and applicable international standards, and our multidisciplinary approach supports both single components and complete engineering projects.</p></div>
+<div class="shot"><img src="assets/about-precision.jpg" alt="Precision machining" loading="lazy"></div></div></section>
+<section class="sec alt"><div class="wrap"><div class="vm">
+<div class="box"><span class="ic"><svg class="i"><use href="#shield"/></svg></span><h3>Our Vision</h3><p>To become a globally trusted engineering and manufacturing partner, delivering innovative, high-precision and reliable solutions that enable industries to build a safer, stronger and more sustainable future.</p></div>
+<div class="box"><span class="ic"><svg class="i"><use href="#gear"/></svg></span><h3>Our Mission</h3><p>To engineer and deliver world-class products and services through advanced technology, precision manufacturing, technical expertise and uncompromising quality, creating lasting value for our customers, employees, partners and society.</p></div></div>
+<div class="vals"><div class="box"><span class="ic"><svg class="i"><use href="#shield"/></svg></span><h3>Quality</h3><p>Built to the highest standards.</p></div><div class="box"><span class="ic"><svg class="i"><use href="#shield"/></svg></span><h3>Safety</h3><p>People, assets and environment first.</p></div><div class="box"><span class="ic"><svg class="i"><use href="#gear"/></svg></span><h3>Precision</h3><p>Engineering with accuracy.</p></div><div class="box"><span class="ic"><svg class="i"><use href="#leaf"/></svg></span><h3>Sustainability</h3><p>A cleaner, safer future.</p></div></div></div></section>
+<section class="sec"><div class="wrap two"><div><p class="eyebrow">Quality &amp; Certification</p><h2>Certified management systems on every project.</h2>
+<p>Monocoque Pvt Ltd is certified to ISO 9001 (Quality Management), ISO 14001 (Environmental Management) and ISO 45001 (Occupational Health &amp; Safety). Our documented systems cover inspection, testing, material traceability and Material Test Certificate (MTC) documentation, while protecting the environment and the people who work with us.</p></div>
+<div class="iso" style="border:0;background:none;padding:0"><div class="logos" style="justify-content:center;gap:40px"><img src="assets/iso-9001.svg" alt="ISO 9001" style="height:96px"><img src="assets/iso-14001.svg" alt="ISO 14001" style="height:96px"><img src="assets/iso-45001.svg" alt="ISO 45001" style="height:96px"></div></div></div></section>
+<section class="band"><div class="wrap"><h2>Precision Engineering. Reliable Manufacturing. Complete Solutions.</h2>
+<div class="nums"><div><b data-count="100" data-suffix="+">100+</b><span>Years Combined Experience</span></div><div><b data-count="90" data-suffix="m">90m</b><span>Advanced Dry Dock Capability</span></div><div><b data-count="8">8</b><span>Strategic Locations</span></div></div></div></section>
+<section class="sec cta-band"><div class="wrap"><p class="eyebrow" style="justify-content:center">Get in Touch</p><h2>Want to know how Monocoque can support your next project?</h2><p class="lead">Share your requirement and our engineers will respond with a clear plan and quote.</p><div class="row"><a class="btn btn-p" href="contact.html">Request a Quote</a><a class="btn btn-o" href="services.html">View Services</a></div></div></section>
+</main>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="g">
+      <div>
+        <a class="logo" href="index.html"><img src="assets/logo-new.png" alt="Monocoque"></a>
+        <p style="margin-top:18px;max-width:340px">Monocoque Pvt Ltd is a leading engineering company with over decades of expertise across the Marine, Oil &amp; Gas, Automobile, Aerospace, Defence and other industrial sectors.</p>
+        <div class="soc"><a href="https://instagram.com/monocoqueindia" aria-label="Instagram" target="_blank" rel="noopener">In</a><a href="https://x.com/Monocoqueindia" aria-label="X" target="_blank" rel="noopener">X</a><a href="https://facebook.com/share/18Nqrsx1s8" aria-label="Facebook" target="_blank" rel="noopener">Fb</a></div>
+      </div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="sectors.html">Industries</a></li><li><a href="career.html">Careers</a></li></ul></div>
+      <div><h4>Capabilities</h4><ul><li><a href="capability-manufacturing.html">Advanced Manufacturing</a></li><li><a href="capability-prototyping.html">Precision Engineering</a></li><li><a href="capability-cnc.html">CNC / CAD-CAM</a></li><li><a href="capability-quality.html">Quality Control</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+919072509773">+91 90725 09773</a></li><li><a href="mailto:sales@monocoqueindia.com">sales@monocoqueindia.com</a></li><li><strong style="color:#fff">Kochi:</strong> 3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom, Kochi, Kerala 682025</li><li><strong style="color:#fff">Coimbatore:</strong> Covai Tech Park, Tower No. 04, Floor No. 01, Kovai Thiru Nagar, Kalapatty, Coimbatore, Tamil Nadu 641014</li></ul></div>
     </div>
-  </header>
-
-  <main>
-    <section class="page-hero relative flex items-end min-h-[52vh]">
-      <div class="hero-bg hero-about-bg absolute inset-0"></div>
-      <div class="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 pb-16 w-full">
-        <p class="eyebrow mb-4">About Us</p>
-        <h1 class="hero-title split-lines max-w-3xl">About <span class="text-accent">Monocoque Pvt Ltd</span></h1>
-        <p class="hero-sub max-w-xl mt-6 text-[var(--text-dim)]">Engineering Precision. Manufacturing Excellence. Building the Future.</p>
-      </div>
-    </section>
-
-    <section class="section-pad border-t border-white/5">
-      <div class="max-w-[1400px] mx-auto px-6 md:px-10 service-detail-body">
-
-        <div class="capability-section">
-          <p class="capability-lead">Monocoque Pvt Ltd is an engineering and manufacturing solutions company delivering precision-engineered products and services for demanding industrial applications.</p>
-          <p>With expertise spanning Marine &amp; Shipbuilding, Oil &amp; Gas, Aerospace &amp; Defence, Automotive, Construction Equipment, and Industrial Engineering, we combine engineering knowledge, advanced manufacturing capabilities, and strong project execution to deliver reliable solutions tailored to our customers’ requirements.</p>
-        </div>
-
-        <div class="capability-section">
-          <p>Our capabilities include engineering design and analysis, precision machining, heavy structural fabrication, welding, casting and forging, piping solutions, composite structures, industrial components, repair and maintenance services, and customised manufacturing solutions.</p>
-          <p>At Monocoque, we focus on transforming engineering requirements into practical, manufacturable, and cost-effective solutions. From concept and design through manufacturing, inspection, testing, and delivery, we maintain a strong commitment to quality, safety, precision, and reliability.</p>
-          <p>We work with recognised engineering practices and applicable international standards to meet the technical and operational requirements of our customers. Our multidisciplinary approach enables us to support both individual component requirements and complete engineering projects.</p>
-        </div>
-
-        <div class="capability-section" id="certification">
-          <h2>Quality &amp; Certification</h2>
-          <div class="iso-strip">
-            <div class="iso-logos"><a href="about.html#certification" class="iso-logo" title="ISO 9001 - Quality Management"><img src="assets/iso-9001.svg" alt="ISO 9001 certified - Quality Management" width="72" height="72" loading="lazy"></a><a href="about.html#certification" class="iso-logo" title="ISO 14001 - Environmental Management"><img src="assets/iso-14001.svg" alt="ISO 14001 certified - Environmental Management" width="72" height="72" loading="lazy"></a><a href="about.html#certification" class="iso-logo" title="ISO 45001 - Occupational Health &amp; Safety"><img src="assets/iso-45001.svg" alt="ISO 45001 certified - Occupational Health &amp; Safety" width="72" height="72" loading="lazy"></a></div>
-            <p>Monocoque Pvt Ltd is certified to <strong>ISO 9001</strong> (Quality Management), <strong>ISO 14001</strong> (Environmental Management) and <strong>ISO 45001</strong> (Occupational Health &amp; Safety). Our documented management systems cover inspection, testing, material traceability and Material Test Certificate (MTC) documentation on every project, while protecting the environment and the people who work with us.</p>
-          </div>
-        </div>
-
-        <div class="capability-section">
-          <h2>Our Vision</h2>
-          <p>To become a globally trusted engineering and manufacturing partner, delivering innovative, high-precision and reliable solutions that enable industries to build a safer, stronger and more sustainable future.</p>
-        </div>
-
-        <div class="capability-section">
-          <h2>Our Mission</h2>
-          <p>To engineer and deliver world-class products and services through advanced technology, precision manufacturing, technical expertise and uncompromising quality — creating lasting value for our customers, employees, partners and society.</p>
-        </div>
-
-        <div class="capability-section">
-          <p class="about-tagline">Precision Engineering. <span class="text-accent">Reliable Manufacturing. Complete Solutions.</span></p>
-        </div>
-
-        <div class="capability-section">
-          <h2>Get in Touch</h2>
-          <p>Want to know more about how Monocoque can support your next project?</p>
-          <a href="contact.html" class="btn-outline mt-4">
-            Get in Touch
-            <span class="btn-ring"><svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg></span>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section-pad bg-[var(--bg-alt)] border-t border-white/5">
-      <div class="max-w-[1400px] mx-auto px-6 md:px-10">
-        <div class="grid grid-cols-3 gap-6 max-w-2xl">
-          <div class="stat-block"><span class="stat-num" data-count="100" data-suffix="+">0</span><span
-              class="stat-label">Years Combined Experience</span></div>
-          <div class="stat-block"><span class="stat-num" data-count="90" data-suffix="m">0</span><span
-              class="stat-label">Advanced Dry Dock Capacity</span></div>
-          <div class="stat-block"><span class="stat-num" data-count="8" data-suffix="">0</span><span
-              class="stat-label">Key Industries Served</span></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="border-t border-white/5 pt-16 pb-8">
-    <div class="max-w-[1400px] mx-auto px-6 md:px-10">
-      <div class="grid md:grid-cols-[1.4fr_1fr_1fr] gap-12 pb-14">
-        <div>
-          <a href="index.html" class="flex items-center gap-3 mb-4"><img src="assets/logo-dark.png" alt="Monocoque Pvt Ltd"
-              class="h-11 md:h-12 w-auto mb-2"></a>
-          <p class="text-[var(--text-dim)] text-sm max-w-xs leading-relaxed">Monocoque Pvt Ltd is an engineering and manufacturing solutions company delivering precision-engineered products and services for demanding industrial applications across Marine &amp; Shipbuilding, Oil &amp; Gas, Aerospace &amp; Defence, Automotive, Construction Equipment and Industrial Engineering.</p>
-          <div class="iso-logos iso-logos-sm"><a href="about.html#certification" class="iso-logo" title="ISO 9001 - Quality Management"><img src="assets/iso-9001.svg" alt="ISO 9001 certified - Quality Management" width="72" height="72" loading="lazy"></a><a href="about.html#certification" class="iso-logo" title="ISO 14001 - Environmental Management"><img src="assets/iso-14001.svg" alt="ISO 14001 certified - Environmental Management" width="72" height="72" loading="lazy"></a><a href="about.html#certification" class="iso-logo" title="ISO 45001 - Occupational Health &amp; Safety"><img src="assets/iso-45001.svg" alt="ISO 45001 certified - Occupational Health &amp; Safety" width="72" height="72" loading="lazy"></a></div>
-          <div class="flex gap-4 mt-5">
-            <a href="https://www.instagram.com/monocoqueindia" target="_blank" rel="noopener" aria-label="Instagram"
-              class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.3" />
-                <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.3" />
-                <circle cx="16.5" cy="7.5" r="0.8" fill="currentColor" />
-              </svg></a>
-            <a href="https://x.com/Monocoqueindia" target="_blank" rel="noopener" aria-label="X (Twitter)"
-              class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="1.3" />
-              </svg></a>
-            <a href="https://www.facebook.com/share/18Nqrsx1s8/" target="_blank" rel="noopener" aria-label="Facebook"
-              class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                <path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z" stroke="currentColor"
-                  stroke-width="1.3" />
-              </svg></a>
-          </div>
-        </div>
-        <div>
-          <p class="footer-heading">Navigate</p>
-          <ul class="flex flex-col gap-2.5 text-sm text-[var(--text-dim)]">
-            <li><a href="index.html#home" class="footer-link">Home</a></li>
-            <li><a href="about.html" class="footer-link">About Us</a></li>
-            <li><a href="services.html" class="footer-link">Services</a></li>
-            <li><a href="sectors.html" class="footer-link">Industries</a></li>
-            <li><a href="career.html" class="footer-link">Careers</a></li>
-            <li><a href="contact.html" class="footer-link">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="footer-heading">Contact</p>
-          <ul class="flex flex-col gap-2.5 text-sm text-[var(--text-dim)]">
-            <li><span class="office-label">Kochi Office</span>3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom, Kochi, Ernakulam, Kerala 682025</li>
-            <li><span class="office-label">Coimbatore Office</span>Covai Tech Park, Tower No. 04, Floor No. 01, S.F.No. 258/2, 259/2A, Site No. 86, 87, Kovai Thiru Nagar, Kalapatty, Coimbatore, Tamil Nadu 641014</li>
-            <li><a href="tel:+919072509773" class="footer-link">+91 90725 09773</a></li>
-            <li><a href="mailto:sales@monocoqueindia.com" class="footer-link">sales@monocoqueindia.com</a></li>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-white/5 text-xs text-[var(--text-dim)]">
-        <span>© 2026 Monocoque Pvt Ltd. All rights reserved.</span>
-        <div class="flex gap-6"><a href="/" class="footer-link">Privacy Policy</a><a href="/"
-            class="footer-link">Terms &amp; Conditions</a></div>
-      </div>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/919072509773" target="_blank" rel="noopener" class="whatsapp-btn"
-    aria-label="Chat on WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M20 12a8 8 0 1 1-3.8-6.8L20 4l-1.2 3.8A7.9 7.9 0 0 1 20 12z" stroke="currentColor" stroke-width="1.4" />
-      <path d="M8.5 9.5c0 3.5 2.5 6 6 6l1-2-2.5-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2.5z" fill="currentColor" />
-    </svg></a>
-
-  <script src="script.js"></script>
+    <div class="bot"><span>&copy; 2026 Monocoque Pvt Ltd. All rights reserved.</span><span>Kochi &middot; Coimbatore</span></div>
+  </div>
+</footer>
+<script src="js/site.js"></script>
 </body>
-
 </html>
