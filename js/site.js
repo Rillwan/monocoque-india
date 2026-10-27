@@ -53,7 +53,7 @@
   var nums = document.querySelectorAll('[data-count]');
   function run(el) {
     var end = parseInt(el.dataset.count, 10), suffix = el.dataset.suffix || '';
-    var t0 = null, dur = 1400;
+    var t0 = null, dur = 3500;
     function step(t) {
       if (t0 === null) t0 = t;
       var p = Math.min((t - t0) / dur, 1);
