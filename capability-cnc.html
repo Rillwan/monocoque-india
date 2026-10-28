@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- PAGE GUIDE: CAPABILITY DETAIL: CNC, CAD/CAM & Assembly
+     Styles : css/site.css (shared by every page; design colours are the variables at the top of that file)
+     Scripts: js/site.js (shared)
+     Layout : header -> main sections -> footer. The header, icon sprite and footer are the same on every page,
+              so when you change a menu link or footer detail, change it in ALL .html files. -->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO: page title and description shown in Google results. Keep the title under ~60 characters. -->
 <title>CNC, CAD/CAM &amp; Assembly Services | Monocoque India</title>
 <meta name="description" content="End-to-end digital manufacturing with expert CNC machining and seamless assembly.">
 <meta name="theme-color" content="#ffffff">
@@ -10,9 +16,11 @@
 <meta property="og:description" content="Engineering Precision. Manufacturing Excellence. Building the Future.">
 <meta property="og:image" content="assets/og-image-photo.jpg">
 <link rel="icon" type="image/png" href="assets/favicon-new.png">
+<!-- STYLES: the one shared stylesheet -->
 <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
+<!-- ICON SPRITE: all icons used on the page are defined here once. Use one with <svg class="i"><use href="#name"/></svg> (ids: shield, gear, leaf, users, ship, drop, plane, car, plant, arr ...). -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
 <symbol id="gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/><circle cx="12" cy="12" r="7"/></symbol>
@@ -25,6 +33,7 @@
 <symbol id="plant" viewBox="0 0 24 24"><path d="M3 20V9l6 4V9l6 4V5h3v15zM3 20h18"/></symbol>
 <symbol id="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
 </defs></svg>
+<!-- HEADER: sticky top bar. Logo, menu links (class="on" marks the current page), "Get a Quote" button and mobile burger. -->
 <header class="hdr">
   <div class="wrap">
     <a class="logo" href="index.html" aria-label="Monocoque India home"><img src="assets/logo-new.png" alt="Monocoque"></a>
@@ -40,14 +49,17 @@
     <button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
   </div>
 </header>
+<!-- MAIN CONTENT: every <section> below is one block of the page, from top to bottom. -->
 <main>
+<!-- SECTION: CNC, CAD/CAM &amp; Assembly Services -->
 <section class="ph"><div class="ph-img"><img src="assets/service-cnc.jpg" alt=""></div><div class="wrap"><div><p class="crumb"><a href="index.html">Home</a> / <a href="services.html">Services</a> / CNC, CAD/CAM &amp; Assembly Services</p><p class="eyebrow">Our Core Capabilities</p><h1>CNC, CAD/CAM &amp; Assembly Services</h1><p class="lead">End-to-end digital manufacturing with expert CNC machining and seamless assembly.</p></div></div></section><section class="sec"><div class="wrap layout"><article class="art"><p class="lead2">We offer comprehensive CNC machining, CAD/CAM design, and assembly services tailored to the unique demands of the marine industry. Our integrated approach ensures that every component we produce meets the highest standards of quality, durability, and performance, even in the most challenging marine environments.</p><p>Our facility is equipped with state-of-the-art CNC machines, including 3-, 4-, and 5-axis machining centers, enabling us to manufacture complex components with exceptional precision. This advanced technology allows for the production of intricate parts such as propeller shafts, gearboxes, and structural elements, ensuring optimal performance and longevity in corrosive marine conditions.</p><p>Utilizing cutting-edge CAD/CAM software, our engineering team transforms conceptual designs into precise manufacturing instructions. This seamless integration between design and production minimizes errors, reduces lead times, and enhances the overall efficiency of the manufacturing process. Our expertise in CAD/CAM also allows for rapid prototyping and iterative design modifications, ensuring that the final product aligns perfectly with client specifications.</p><p>Beyond machining and design, we provide full assembly services, delivering ready-to-install components and systems. Our assembly process includes meticulous quality checks, functional testing, and adherence to strict industry standards. Whether it's assembling propulsion systems, hydraulic units, or other mechanical assemblies, our team ensures that each product is reliable and built to withstand the rigors of marine operations.</p><p>Quality is at the core of our operations. We adhere to ISO 9001:2015 standards, employing rigorous inspection protocols at every stage of production. Our quality assurance measures include Coordinate Measuring Machine (CMM) inspections, non-destructive testing (NDT), and comprehensive documentation to ensure traceability and compliance with marine industry regulations.</p><p>Understanding that each marine application has unique requirements, we offer customized solutions tailored to specific operational needs. From material selection to final assembly, our team collaborates closely with clients to deliver components that meet exact specifications, ensuring optimal functionality and durability in marine environments.</p></article><aside class="side"><div class="box"><h3>All capabilities</h3><ul><li><a class="" href="capability-manufacturing.html">Advanced Manufacturing &amp; Machining<svg class="i"><use href="#arr"/></svg></a></li><li><a class="" href="capability-prototyping.html">Precision Engineering &amp; Prototyping<svg class="i"><use href="#arr"/></svg></a></li><li><a class="on" href="capability-cnc.html">CNC, CAD/CAM &amp; Assembly Services<svg class="i"><use href="#arr"/></svg></a></li><li><a class="" href="capability-quality.html">Quality Control &amp; Testing<svg class="i"><use href="#arr"/></svg></a></li><li><a class="" href="capability-construction.html">Construction &amp; Interior Solutions<svg class="i"><use href="#arr"/></svg></a></li></ul></div><div class="box navy"><h3>Discuss your project</h3><p>Talk to our engineers about your requirement and get a clear plan and quote.</p><a class="btn btn-p" href="contact.html">Get a Quote</a></div></aside></div></section><section class="sec cta-band"><div class="wrap"><p class="eyebrow" style="justify-content:center">Get in Touch</p><h2>Looking for an engineering partner?</h2><p class="lead">Share your requirement and our engineers will respond with a clear plan and quote.</p><div class="row"><a class="btn btn-p" href="contact.html">Request a Quote</a><a class="btn btn-o" href="services.html">View Services</a></div></div></section>
 </main>
+<!-- FOOTER: logo (assets/logo-white.png), company text, links, contact details. Same on every page. -->
 <footer class="ftr">
   <div class="wrap">
     <div class="g">
       <div>
-        <a class="logo" href="index.html"><img src="assets/logo-new.png" alt="Monocoque"></a>
+        <a class="logo" href="index.html"><img src="assets/logo-white.png" alt="Monocoque"></a>
         <p style="margin-top:18px;max-width:340px">Monocoque Pvt Ltd is a leading engineering company with over decades of expertise across the Marine, Oil &amp; Gas, Automobile, Aerospace, Defence and other industrial sectors.</p>
         <div class="soc"><a href="https://instagram.com/monocoqueindia" aria-label="Instagram" target="_blank" rel="noopener">In</a><a href="https://x.com/Monocoqueindia" aria-label="X" target="_blank" rel="noopener">X</a><a href="https://facebook.com/share/18Nqrsx1s8" aria-label="Facebook" target="_blank" rel="noopener">Fb</a></div>
       </div>
@@ -58,6 +70,7 @@
     <div class="bot"><span>&copy; 2026 Monocoque Pvt Ltd. All rights reserved.</span><span>Kochi &middot; Coimbatore</span></div>
   </div>
 </footer>
+<!-- SCRIPTS: shared behaviour (menu, slider, counters, carousel) - see comments inside js/site.js -->
 <script src="js/site.js"></script>
 </body>
 </html>

@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- PAGE GUIDE: HOME PAGE
+     Styles : css/site.css (shared by every page; design colours are the variables at the top of that file)
+     Scripts: js/site.js (shared)
+     Layout : header -> main sections -> footer. The header, icon sprite and footer are the same on every page,
+              so when you change a menu link or footer detail, change it in ALL .html files. -->
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO: page title and description shown in Google results. Keep the title under ~60 characters. -->
   <title>Monocoque India | Engineering Precision. Manufacturing Excellence.</title>
   <meta name="description"
     content="Monocoque India delivers end-to-end engineering and manufacturing solutions for marine, oil &amp; gas, aerospace, defence and industrial sectors from Kochi, Kerala.">
@@ -12,12 +18,14 @@
   <meta property="og:description" content="Engineering Precision. Manufacturing Excellence. Building the Future.">
   <meta property="og:image" content="assets/og-image-photo.jpg">
   <link rel="icon" type="image/png" href="assets/favicon-new.png">
+  <!-- STYLES: the one shared stylesheet -->
   <link rel="stylesheet" href="css/site.css">
   <script
     type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Monocoque India","url":"https://monocoqueindia.com","logo":"https://monocoqueindia.com/assets/logo-new.png","email":"sales@monocoqueindia.com","telephone":"+91 90725 09773","address":{"@type":"PostalAddress","streetAddress":"3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom","addressLocality":"Kochi","addressRegion":"Kerala","postalCode":"682025","addressCountry":"IN"}}</script>
 </head>
 
 <body>
+  <!-- ICON SPRITE: all icons used on the page are defined here once. Use one with <svg class="i"><use href="#name"/></svg> (ids: shield, gear, leaf, users, ship, drop, plane, car, plant, arr ...). -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
       <symbol id="shield" viewBox="0 0 24 24">
@@ -64,10 +72,12 @@
     </defs>
   </svg>
 
+  <!-- PRELOADER: white screen with logo shown for ~1 second (hidden by js/site.js) -->
   <div id="pre" aria-hidden="true">
     <div><img src="assets/logo-new.png" alt=""><i></i></div>
   </div>
 
+  <!-- HEADER: sticky top bar. Logo, menu links (class="on" marks the current page), "Get a Quote" button and mobile burger. -->
   <header class="hdr">
     <div class="wrap">
       <a class="logo" href="index.html" aria-label="Monocoque India home"><img src="assets/logo-new.png"
@@ -85,7 +95,11 @@
     </div>
   </header>
 
+  <!-- MAIN CONTENT: every <section> below is one block of the page, from top to bottom. -->
   <main>
+    <!-- HERO: headline, intro, 2 buttons, rotating photo slider and 3 stat cards.
+         Slider photos are the <img> tags in .hero-img; data-t / data-s on each <img> = caption title / subtitle (js/site.js rotates them).
+         Stat numbers use data-count (see COUNT-UP note in js/site.js). -->
     <section class="hero" id="home">
       <div class="hero-img">
         <img class="on" src="assets/hero-ship.jpg" alt="Ship in dry dock" data-t="Ship Repair &amp; Maintenance"
@@ -117,6 +131,7 @@
           </div>
         </div>
       </div>
+      <!-- HERO STAT CARDS: 3 small cards under the hero text -->
       <div class="chips">
         <div class="wrap">
           <div class="chip"><span class="ic"><svg class="i">
@@ -142,6 +157,7 @@
       </div>
     </section>
 
+    <!-- ABOUT: intro text, 4 value icons, 2 stats and 3 photo panels on the right. -->
     <section class="sec" id="about">
       <div class="wrap about">
         <div>
@@ -150,6 +166,7 @@
           <p class="lead">At Monocoque India we combine decades of experience with cutting-edge technology to deliver
             high-quality engineering and manufacturing solutions. Our commitment to safety, precision and sustainability
             drives us to create long-lasting value for our clients and communities.</p>
+          <!-- VALUE ICONS: Quality / Safety / Precision / Sustainability -->
           <div class="feat">
             <div><svg class="i">
                 <use href="#shield" />
@@ -169,6 +186,7 @@
             <div><b>90m</b><span>Advanced Dry Dock Capability</span></div>
           </div>
         </div>
+        <!-- PHOTO PANELS: 3 photos with captions (links to inner pages) -->
         <div class="panels">
           <a class="pn" href="about.html"><img src="assets/about-marine.jpg" alt="Engineer at a shipyard"
               loading="lazy"></a>
@@ -184,11 +202,14 @@
       </div>
     </section>
 
+    <!-- TRUSTED CLIENTS: scrolling logo strip. Logos live in assets/clients/.
+         The list is written TWICE (second one is aria-hidden) so the loop looks seamless: add a new logo to BOTH lists. -->
     <section class="clients" aria-label="Our trusted clients and partners">
       <div class="wrap">
         <p>Our Trusted Clients &amp; Partners</p>
       </div>
       <div class="mq">
+        <!-- LOGO LIST #1 (visible) -->
         <ul class="mq-t">
           <li><img src="assets/clients/air-india-sats.png" alt="Air India SATS" loading="lazy"></li>
           <li><img src="assets/clients/kel.png" alt="KEL" loading="lazy"></li>
@@ -213,6 +234,7 @@
       </div>
     </section>
 
+    <!-- CERTIFICATIONS: ISO badges (assets/iso-*.svg). -->
     <section class="iso" aria-label="Certifications">
       <div class="wrap">
         <p>Certified Quality, Safety &amp; Environment</p>
@@ -221,6 +243,7 @@
       </div>
     </section>
 
+    <!-- SERVICES: 6 photo cards linking to services.html. Copy one <a class="card"> block to add another. -->
     <section class="sec alt" id="services">
       <div class="wrap">
         <div class="head">
@@ -234,6 +257,7 @@
               <use href="#arr" />
             </svg></a>
         </div>
+        <!-- SERVICE CARDS: photo cards (3 per row). Copy one <a class="card"> block to add another. -->
         <div class="cards">
           <a class="card" href="services.html"><img src="assets/industry-marine.jpg" alt="" loading="lazy">
             <div class="tag"><svg class="i">
@@ -293,6 +317,7 @@
       </div>
     </section>
 
+    <!-- KEY INDUSTRIES: horizontal carousel (arrow buttons are handled in js/site.js). -->
     <section class="sec" id="industries">
       <div class="wrap">
         <div class="head">
@@ -305,6 +330,7 @@
           <div class="ctrl"><button data-dir="-1" aria-label="Previous">&#8592;</button><button data-dir="1"
               aria-label="Next">&#8594;</button></div>
         </div>
+        <!-- CAROUSEL TRACK: each <a class="tile"> is one slide; scrolls sideways -->
         <div class="track">
           <a class="tile" href="sectors.html"><img src="assets/industry-marine.jpg" alt="" loading="lazy"><svg
               class="i">
@@ -330,6 +356,39 @@
       </div>
     </section>
 
+    <!-- INTERIORS: promo for the sister brand Monocoque Interiors. The button opens the external site in a new tab.
+         Photos: assets/interiors-1.jpg (large, portrait) and assets/interiors-2.jpg (small, overlapping). -->
+    <section class="sec alt interiors" id="interiors">
+      <div class="wrap int">
+        <div class="int-media">
+          <figure class="int-main"><img src="assets/interiors-1.jpg" alt="Elegant residential living room interior"
+              loading="lazy"></figure>
+          <figure class="int-sub"><img src="assets/interiors-2.jpg" alt="Modern commercial office reception interior"
+              loading="lazy"></figure>
+        </div>
+        <div class="int-copy">
+          <p class="eyebrow">Monocoque Interiors</p>
+          <h2>Designing Spaces. Defining Experiences.</h2>
+          <h3 class="int-sub-h">Discover Our World of Interiors</h3>
+          <p>At Monocoque Interiors, we believe great design goes beyond structures. Our interior design division
+            transforms spaces into thoughtfully designed environments that reflect your style, purpose, and personality.
+          </p>
+          <p>From elegant residential interiors to sophisticated commercial spaces, we bring creativity, functionality,
+            and craftsmanship together to create inspiring experiences.</p>
+          <ul class="int-tags">
+            <li>Residential Interiors</li>
+            <li>Commercial Spaces</li>
+          </ul>
+          <p class="int-strong">Explore our interior design projects and discover the art of exceptional spaces.</p>
+          <a class="btn btn-p" href="https://monocoqueinteriors.com/" target="_blank" rel="noopener">Explore Our
+            Interiors <svg class="i">
+              <use href="#arr" />
+            </svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE BAND: dark navy section with background photo and 3 count-up stats. -->
     <section class="exp">
       <img src="assets/why-story.jpg" alt="" loading="lazy">
       <div class="wrap">
@@ -350,6 +409,7 @@
       </div>
     </section>
 
+    <!-- CALL TO ACTION: closing banner before the footer. -->
     <section class="sec cta-band">
       <div class="wrap">
         <p class="eyebrow" style="justify-content:center">Let's Build Together</p>
@@ -361,11 +421,12 @@
     </section>
   </main>
 
+  <!-- FOOTER: logo (assets/logo-white.png), company text, links, contact details. Same on every page. -->
   <footer class="ftr">
     <div class="wrap">
       <div class="g">
         <div>
-          <a class="logo" href="index.html"><img src="assets/logo-new.png" alt="Monocoque"></a>
+          <a class="logo" href="index.html"><img src="assets/logo-white.png" alt="Monocoque"></a>
           <p style="margin-top:18px;max-width:340px">Monocoque Pvt Ltd is a leading engineering company with over
             decades of expertise across the Marine, Oil &amp; Gas, Automobile, Aerospace, Defence and other industrial
             sectors.</p>
@@ -409,6 +470,7 @@
           Coimbatore</span></div>
     </div>
   </footer>
+  <!-- SCRIPTS: shared behaviour (menu, slider, counters, carousel) - see comments inside js/site.js -->
   <script src="js/site.js"></script>
 </body>
 

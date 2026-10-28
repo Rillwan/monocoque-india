@@ -1,4 +1,5 @@
 <?php
+/* FILE GUIDE: Receives the contact form (POST from js/contact.js), validates it and emails sales@monocoqueindia.com via PHPMailer, plus a confirmation to the visitor. Replies JSON {success, message}. SMTP settings are in mail-config.php. */
 header('Content-Type: application/json');
 
 // 1. Only allow POST requests

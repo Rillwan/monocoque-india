@@ -1,4 +1,6 @@
+/* FILE GUIDE: js/career.js - used only on career.html. Handles the resume upload box and sending the application. */
 (function () {
+  // ---- CAREER FORM: resume picker + AJAX submit to send-career.php ----
   var form = document.getElementById('careerForm');
   if (!form) return;
   var input = document.getElementById('resume');
@@ -6,7 +8,9 @@
   var drop = document.getElementById('fileDrop');
   var status = document.getElementById('fstat');
   var idle = label.textContent;
+  // show the chosen file name inside the dashed upload box
   input.addEventListener('change', function () { if (input.files[0]) label.textContent = input.files[0].name; });
+  // drag & drop support for the upload box (highlights while dragging, accepts the dropped file)
   ['dragover', 'dragleave', 'drop'].forEach(function (evt) {
     drop.addEventListener(evt, function (e) {
       e.preventDefault();
@@ -14,6 +18,7 @@
       if (evt === 'drop' && e.dataTransfer.files[0]) { input.files = e.dataTransfer.files; label.textContent = e.dataTransfer.files[0].name; }
     });
   });
+  // checks in the browser first (type + 5MB); send-career.php checks again on the server
   var MAX = 5 * 1024 * 1024;
   form.addEventListener('submit', async function (e) {
     e.preventDefault();

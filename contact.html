@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- PAGE GUIDE: CONTACT (enquiry form + maps)
+     Styles : css/site.css (shared by every page; design colours are the variables at the top of that file)
+     Scripts: js/site.js (shared), js/contact.js
+     Layout : header -> main sections -> footer. The header, icon sprite and footer are the same on every page,
+              so when you change a menu link or footer detail, change it in ALL .html files. -->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO: page title and description shown in Google results. Keep the title under ~60 characters. -->
 <title>Contact | Monocoque India</title>
 <meta name="description" content="Contact Monocoque India: Kochi head office and Coimbatore branch. Call +91 90725 09773 or email sales@monocoqueindia.com.">
 <meta name="theme-color" content="#ffffff">
@@ -10,9 +16,11 @@
 <meta property="og:description" content="Engineering Precision. Manufacturing Excellence. Building the Future.">
 <meta property="og:image" content="assets/og-image-photo.jpg">
 <link rel="icon" type="image/png" href="assets/favicon-new.png">
+<!-- STYLES: the one shared stylesheet -->
 <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
+<!-- ICON SPRITE: all icons used on the page are defined here once. Use one with <svg class="i"><use href="#name"/></svg> (ids: shield, gear, leaf, users, ship, drop, plane, car, plant, arr ...). -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
 <symbol id="gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/><circle cx="12" cy="12" r="7"/></symbol>
@@ -25,6 +33,7 @@
 <symbol id="plant" viewBox="0 0 24 24"><path d="M3 20V9l6 4V9l6 4V5h3v15zM3 20h18"/></symbol>
 <symbol id="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
 </defs></svg>
+<!-- HEADER: sticky top bar. Logo, menu links (class="on" marks the current page), "Get a Quote" button and mobile burger. -->
 <header class="hdr">
   <div class="wrap">
     <a class="logo" href="index.html" aria-label="Monocoque India home"><img src="assets/logo-new.png" alt="Monocoque"></a>
@@ -40,25 +49,32 @@
     <button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
   </div>
 </header>
+<!-- MAIN CONTENT: every <section> below is one block of the page, from top to bottom. -->
 <main>
+<!-- SECTION: Let's Build Something Great. -->
 <section class="ph"><div class="ph-img"><img src="assets/hero-contact.jpg" alt=""></div><div class="wrap"><div><p class="crumb"><a href="index.html">Home</a> / Contact</p><p class="eyebrow">Get in Touch</p><h1>Let's Build Something Great.</h1><p class="lead">Tell us about your requirement and we'll respond with a clear plan and quote.</p></div></div></section>
+<!-- SECTION: We'd love to hear from you. -->
 <section class="sec"><div class="wrap two" style="align-items:start"><div><p class="eyebrow">Send a Message</p><h2>We'd love to hear from you.</h2>
+<!-- CONTACT FORM: sent by js/contact.js to send-contact.php (PHPMailer email).
+     Fields: name, phone, email, subject, message. "botcheck" is a hidden spam trap - leave it empty. -->
 <form id="contactForm" class="cform" style="margin-top:28px"><input type="text" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 <div><label for="name">Name</label><input id="name" name="name" type="text" required autocomplete="name"></div><div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required autocomplete="tel"></div><div class="full"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div><div class="full"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required autocomplete="off"></div><div class="full"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
 <div class="full"><button class="btn btn-p" type="submit">Send Message <svg class="i"><use href="#arr"/></svg></button></div><p id="fstat" class="full" role="status"></p></form></div>
 <div class="info"><div class="box"><span class="ic"><svg class="i"><use href="#users"/></svg></span><h3 style="margin-top:12px">Call or email</h3><p><a href="tel:+919072509773">+91 90725 09773</a><br><a href="mailto:sales@monocoqueindia.com">sales@monocoqueindia.com</a></p><p style="margin-top:8px">Monday to Sunday, 10:00 AM to 07:00 PM</p></div>
 <div class="box"><h3>Kochi Office</h3><p>3rd Floor, Maria Arcade, Chathangattu Rd, Palarivattom, Kochi, Ernakulam, Kerala 682025</p></div>
 <div class="box"><h3>Coimbatore Office</h3><p>Covai Tech Park, Tower No. 04, Floor No. 01, S.F.No. 258/2, 259/2A, Site No. 86, 87, Kovai Thiru Nagar, Kalapatty, Coimbatore, Tamil Nadu 641014</p></div></div></div></section>
+<!-- SECTION: content block -->
 <section class="sec alt"><div class="wrap map"><div class="maptabs"><button class="on" data-map="map-kochi">Kochi</button><button data-map="map-coimbatore">Coimbatore</button></div>
 <iframe id="map-kochi" title="Kochi office map" loading="lazy" src="https://www.google.com/maps?q=Maria+Arcade+Chathangattu+Rd+Palarivattom+Kochi+Kerala+682025&amp;output=embed"></iframe>
 <iframe id="map-coimbatore" title="Coimbatore office map" loading="lazy" hidden src="https://www.google.com/maps?q=Covai+Tech+Park+Kalapatty+Coimbatore+641014&amp;output=embed"></iframe></div></section>
 
 </main>
+<!-- FOOTER: logo (assets/logo-white.png), company text, links, contact details. Same on every page. -->
 <footer class="ftr">
   <div class="wrap">
     <div class="g">
       <div>
-        <a class="logo" href="index.html"><img src="assets/logo-new.png" alt="Monocoque"></a>
+        <a class="logo" href="index.html"><img src="assets/logo-white.png" alt="Monocoque"></a>
         <p style="margin-top:18px;max-width:340px">Monocoque Pvt Ltd is a leading engineering company with over decades of expertise across the Marine, Oil &amp; Gas, Automobile, Aerospace, Defence and other industrial sectors.</p>
         <div class="soc"><a href="https://instagram.com/monocoqueindia" aria-label="Instagram" target="_blank" rel="noopener">In</a><a href="https://x.com/Monocoqueindia" aria-label="X" target="_blank" rel="noopener">X</a><a href="https://facebook.com/share/18Nqrsx1s8" aria-label="Facebook" target="_blank" rel="noopener">Fb</a></div>
       </div>
@@ -69,6 +85,7 @@
     <div class="bot"><span>&copy; 2026 Monocoque Pvt Ltd. All rights reserved.</span><span>Kochi &middot; Coimbatore</span></div>
   </div>
 </footer>
+<!-- SCRIPTS: shared behaviour (menu, slider, counters, carousel) - see comments inside js/site.js -->
 <script src="js/site.js"></script>
 <script src="js/contact.js"></script>
 </body>

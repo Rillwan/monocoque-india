@@ -1,4 +1,5 @@
 <?php
+/* FILE GUIDE: Receives the career application with resume (POST from js/career.js), validates fields and file (PDF/DOC/DOCX, max 5MB), emails the application with the resume attached, plus a confirmation to the applicant. SMTP settings are in mail-config.php. */
 header('Content-Type: application/json');
 
 function out($ok, $msg = '') {
