@@ -16,3 +16,32 @@ Options -Indexes
 <FilesMatch "^\.">
     Require all denied
 </FilesMatch>
+
+# ==========================================================
+# Monocoque India - .htaccess
+# Forces HTTPS and removes ".html" from page URLs.
+# ==========================================================
+RewriteEngine On
+
+# 1. Always use HTTPS: send http:// visitors to https://
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2. Redirect /index.html to the root URL "/"
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 3. Redirect old URLs ending in .html to the clean URL
+#    Example: /about.html -> /about  (301 = permanent, keeps SEO value)
+RewriteCond %{THE_REQUEST} \s/([^\s?]+)\.html[\s?]
+RewriteRule ^ /%1 [R=301,L]
+
+# 4. Serve the matching .html file for clean URLs
+#    Example: a visit to /about loads about.html (the URL stays /about)
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^.]+)$ $1.html [L]
+
+# 5. Remove a trailing slash from page URLs
+#    Example: /about/ -> /about  (real folders such as /assets/ are not changed)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]

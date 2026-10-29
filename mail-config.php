@@ -16,7 +16,7 @@
 $config = [
     'host'      => 'smtp.gmail.com',
     'username'  => 'sales@monocoqueindia.com',
-    'password'  => '',
+    'password'  => 'qkqpigqcqnpwzhki',
     'port'      => 587,
     'secure'    => 'tls',
     'from'      => 'sales@monocoqueindia.com',
