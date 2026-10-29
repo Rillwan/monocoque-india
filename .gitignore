@@ -1,1 +1,3 @@
 *.zip
+# Private email password file (must live outside public_html)
+mail-secrets.php

@@ -38,19 +38,24 @@ use PHPMailer\PHPMailer\Exception;
 $mail = new PHPMailer(true);
 
 try {
-    // 5. SMTP configuration — Hostinger credentials
+    // 5. SMTP configuration (Google Workspace; values come from mail-config.php)
     $cfg = require 'mail-config.php';
+    // stop early with a clear message if the App Password has not been added yet
+    if ($cfg['password'] === '') {
+        throw new Exception('Email is not configured yet (add the App Password in mail-secrets.php, one folder above public_html).');
+    }
     $mail->isSMTP();
     $mail->Host       = $cfg['host'];
     $mail->SMTPAuth   = true;
     $mail->Username   = $cfg['username'];
     $mail->Password   = $cfg['password'];
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    // 'tls' = STARTTLS (port 587), anything else = SSL (port 465); set in mail-config.php
+    $mail->SMTPSecure = ($cfg['secure'] === 'tls') ? PHPMailer::ENCRYPTION_STARTTLS : PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = $cfg['port'];
 
     // 6. Email to YOU (admin notification)
-    $mail->setFrom('noreply@monocoqueindia.com', 'Monocoque Website');
-    $mail->addAddress('sales@monocoqueindia.com');
+    $mail->setFrom($cfg['from'], $cfg['from_name']);
+    $mail->addAddress($cfg['to']);
     $mail->addReplyTo($email, $name);
     $mail->isHTML(true);
     $mail->Subject = "New Contact Form: $subject";
@@ -79,5 +84,5 @@ try {
     echo json_encode(['success' => true]);
 
 } catch (Exception $e) {
-    echo json_encode(['success' => false, 'message' => 'Mailer Error: ' . $mail->ErrorInfo]);
+    echo json_encode(['success' => false, 'message' => 'Mailer Error: ' . $e->getMessage()]);
 }

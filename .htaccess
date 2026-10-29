@@ -1,0 +1,18 @@
+# ==========================================================
+# Monocoque India - .htaccess (security rules)
+# Works on Apache and LiteSpeed (Hostinger). Put this file in public_html.
+# ==========================================================
+
+# 1. Do not list the files of a folder when there is no index file
+Options -Indexes
+
+# 2. Block direct browser access to private/config files.
+#    PHP can still read them internally; visitors cannot open them.
+<FilesMatch "^(mail-config\.php|mail-secrets(\.example)?\.php|\.user\.ini|\.gitignore|\.htaccess)$">
+    Require all denied
+</FilesMatch>
+
+# 3. Block any hidden file or folder (names starting with a dot, e.g. .git)
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

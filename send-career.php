@@ -71,6 +71,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 $cfg  = require 'mail-config.php';
+// stop early with a clear message if the App Password has not been added yet
+if ($cfg['password'] === '') {
+    out(false, 'Email is not configured yet (add the App Password in mail-secrets.php, one folder above public_html).');
+}
 $mail = new PHPMailer(true);
 
 try {
@@ -79,7 +83,8 @@ try {
     $mail->SMTPAuth   = true;
     $mail->Username   = $cfg['username'];
     $mail->Password   = $cfg['password'];
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    // 'tls' = STARTTLS (port 587), anything else = SSL (port 465); set in mail-config.php
+    $mail->SMTPSecure = ($cfg['secure'] === 'tls') ? PHPMailer::ENCRYPTION_STARTTLS : PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = $cfg['port'];
     $mail->CharSet    = 'UTF-8';
 
@@ -117,5 +122,5 @@ try {
 
     out(true);
 } catch (Exception $e) {
-    out(false, 'Mailer Error: ' . $mail->ErrorInfo);
+    out(false, 'Mailer Error: ' . $e->getMessage());
 }

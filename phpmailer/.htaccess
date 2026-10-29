@@ -1,0 +1,2 @@
+# Deny direct web access to the PHPMailer library (it is only loaded by send-*.php)
+Require all denied
